@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como · Mediolan · Werona — 30.09–02.10.2026</title>
+<meta name="description" content="Plan wycieczki Ania &amp; Daniel: 3 warianty, ceny, bilety i rezerwacje z aktywnymi linkami.">
+<style>
+:root{
+  --bg:#f6f4ef; --bg2:#fffdf8; --card:#ffffff; --ink:#15221f; --ink2:#4d5f5a;
+  --line:#e2ded2; --accent:#0d5c63; --accent2:#c26a2d; --accent3:#1b7f5a;
+  --chip:#eef4f3; --warn-bg:#fdf3e3; --warn-line:#e8c48a;
+  --ok-bg:#eaf5ef; --ok-line:#a8cfb8; --shadow:0 1px 2px rgba(20,40,35,.06),0 8px 24px rgba(20,40,35,.07);
+  --radius:14px;
+}
+:root:not([data-theme="light"]) { }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#10161a; --bg2:#141c21; --card:#182128; --ink:#e8efee; --ink2:#9db0ad;
+    --line:#26333a; --accent:#5fc0c4; --accent2:#e79857; --accent3:#62c79a;
+    --chip:#1d2a31; --warn-bg:#2a2216; --warn-line:#6b5327;
+    --ok-bg:#16291f; --ok-line:#2f5c43; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10161a; --bg2:#141c21; --card:#182128; --ink:#e8efee; --ink2:#9db0ad;
+  --line:#26333a; --accent:#5fc0c4; --accent2:#e79857; --accent3:#62c79a;
+  --chip:#1d2a31; --warn-bg:#2a2216; --warn-line:#6b5327;
+  --ok-bg:#16291f; --ok-line:#2f5c43; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:86px}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:1080px; margin:0 auto; padding:0 16px}
+a{color:var(--accent); text-underline-offset:2px}
+a:hover{color:var(--accent2)}
+h1,h2,h3,h4{line-height:1.25; margin:0 0 .4em}
+h1{font-size:clamp(26px,5vw,42px); letter-spacing:-.02em}
+h2{font-size:clamp(21px,3.4vw,30px); letter-spacing:-.01em; margin-top:0}
+h3{font-size:clamp(17px,2.4vw,21px)}
+h4{font-size:15px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink2); font-weight:700}
+p{margin:0 0 .9em}
+small{color:var(--ink2)}
+
+/* HEADER */
+header.hero{
+  background:linear-gradient(160deg,var(--accent) 0%, #0a3f4a 55%, #082e3a 100%);
+  color:#eef8f8; padding:34px 0 26px; position:relative; overflow:hidden;
+}
+header.hero::after{
+  content:""; position:absolute; inset:auto -10% -40% -10%; height:200px;
+  background:radial-gradient(60% 100% at 50% 0,rgba(255,255,255,.14),transparent 70%);
+}
+.hero h1{color:#fff; margin-bottom:8px}
+.hero .sub{color:#bfe4e6; font-size:clamp(14px,2vw,17px); margin:0}
+.badges{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px}
+.badge{
+  background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22);
+  color:#eaf8f8; padding:5px 11px; border-radius:999px; font-size:13px; font-weight:600;
+  backdrop-filter:blur(4px);
+}
+
+/* NAV */
+nav.top{
+  position:sticky; top:0; z-index:40; background:var(--bg2);
+  border-bottom:1px solid var(--line); backdrop-filter:blur(8px);
+}
+nav.top .wrap{display:flex; gap:4px; align-items:center; overflow-x:auto; padding-top:8px; padding-bottom:8px; scrollbar-width:thin}
+nav.top a{
+  white-space:nowrap; font-size:14px; font-weight:600; text-decoration:none;
+  color:var(--ink2); padding:7px 11px; border-radius:9px;
+}
+nav.top a:hover{background:var(--chip); color:var(--accent)}
+#themeBtn{
+  margin-left:auto; flex:none; background:var(--chip); border:1px solid var(--line);
+  color:var(--ink2); font:inherit; font-size:13px; font-weight:600; padding:6px 12px;
+  border-radius:9px; cursor:pointer;
+}
+
+section{padding:36px 0; border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+
+.card{
+  background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+  padding:20px; box-shadow:var(--shadow); margin-bottom:16px;
+}
+.grid{display:grid; gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+
+/* FLIGHT */
+.flight{display:grid; grid-template-columns:1fr auto 1fr; gap:10px; align-items:center; text-align:center; margin:14px 0}
+.flight .time{font-size:clamp(22px,4vw,30px); font-weight:800; letter-spacing:-.02em}
+.flight .code{font-size:13px; font-weight:700; color:var(--ink2); letter-spacing:.1em}
+.flight .mid{color:var(--ink2); font-size:12.5px; min-width:110px}
+.flight .mid::before{content:""; display:block; height:2px; background:var(--line); margin:0 0 6px; border-radius:2px}
+
+/* TABS */
+.tabs{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 20px}
+.tab{
+  flex:1 1 200px; text-align:left; cursor:pointer; font:inherit;
+  background:var(--card); border:1.5px solid var(--line); border-radius:12px;
+  padding:12px 14px; color:var(--ink); transition:.15s;
+}
+.tab:hover{border-color:var(--accent)}
+.tab[aria-selected="true"]{border-color:var(--accent); background:var(--chip); box-shadow:var(--shadow)}
+.tab .t-lab{font-size:11.5px; font-weight:800; letter-spacing:.1em; color:var(--accent2); display:block}
+.tab .t-name{font-weight:700; font-size:15.5px; display:block; margin-top:2px}
+.tab .t-sum{font-size:12.5px; color:var(--ink2); display:block}
+.panel[hidden]{display:none}
+
+/* TIMELINE */
+.day{border-left:3px solid var(--accent); padding:2px 0 2px 18px; margin:0 0 26px; position:relative}
+.day::before{
+  content:""; position:absolute; left:-8px; top:6px; width:13px; height:13px;
+  border-radius:50%; background:var(--accent); border:3px solid var(--bg);
+}
+.day > h3{margin-bottom:2px}
+.day .dmeta{font-size:13px; color:var(--ink2); margin:0 0 14px; font-weight:600}
+.stop{margin:0 0 14px; padding:0 0 0 2px}
+.stop .st-h{display:flex; flex-wrap:wrap; gap:8px; align-items:baseline}
+.hr{font-variant-numeric:tabular-nums; font-weight:800; color:var(--accent2); font-size:14px; min-width:52px}
+.stop .st-t{font-weight:700; font-size:16px}
+.stop p{margin:3px 0 0 54px; font-size:14.5px; color:var(--ink2)}
+@media(max-width:560px){ .stop p{margin-left:0} }
+.pin{
+  display:inline-block; font-size:12px; font-weight:700; text-decoration:none;
+  background:var(--chip); border:1px solid var(--line); color:var(--accent);
+  padding:1px 8px; border-radius:999px; margin-left:6px;
+}
+.pin:hover{border-color:var(--accent)}
+
+/* TABLES */
+.tbl-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:0 0 6px}
+table{border-collapse:collapse; width:100%; font-size:14.5px; min-width:420px}
+th,td{text-align:left; padding:9px 11px; border-bottom:1px solid var(--line); vertical-align:top}
+th{font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--ink2); font-weight:700}
+tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+tr.total td{border-top:2px solid var(--accent); font-weight:800; background:var(--chip)}
+.pln{color:var(--ink2); font-size:13px}
+
+/* NOTES */
+.note{border-radius:12px; padding:13px 15px; font-size:14.5px; margin:0 0 14px}
+.note strong{display:block; margin-bottom:2px}
+.note.warn{background:var(--warn-bg); border:1px solid var(--warn-line)}
+.note.ok{background:var(--ok-bg); border:1px solid var(--ok-line)}
+
+/* BUTTONS */
+.btns{display:flex; flex-wrap:wrap; gap:9px; margin:12px 0 0}
+.btn{
+  display:inline-flex; align-items:center; gap:7px; text-decoration:none;
+  background:var(--accent); color:#fff; font-weight:700; font-size:14px;
+  padding:9px 15px; border-radius:10px; border:1px solid transparent;
+}
+.btn:hover{background:var(--accent2); color:#fff}
+.btn.sec{background:var(--card); color:var(--accent); border-color:var(--line)}
+.btn.sec:hover{border-color:var(--accent); background:var(--chip); color:var(--accent)}
+
+ul.clean{margin:.3em 0 .9em; padding-left:20px}
+ul.clean li{margin-bottom:5px; font-size:14.5px}
+.kv{display:flex; justify-content:space-between; gap:12px; padding:7px 0; border-bottom:1px dashed var(--line); font-size:14.5px}
+.kv:last-child{border-bottom:0}
+.kv span:last-child{font-weight:700; white-space:nowrap; font-variant-numeric:tabular-nums}
+
+iframe.map{width:100%; height:480px; border:0; border-radius:var(--radius); display:block}
+@media(max-width:640px){ iframe.map{height:360px} }
+
+footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
+@media print{
+  nav.top,#themeBtn,.tabs{display:none}
+  .panel[hidden]{display:block !important}
+  body{background:#fff}
+  section{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Como · Mediolan · Werona</h1>
+    <p class="sub">Ania &amp; Daniel — 30 września – 2 października 2026 · 2 noce · 3 warianty do wyboru</p>
+    <div class="badges">
+      <span class="badge">WRO ⇄ BGY · Ryanair</span>
+      <span class="badge">2 osoby · 1 pokój</span>
+      <span class="badge">Baza: Mediolan</span>
+      <span class="badge">Transport publiczny</span>
+      <span class="badge">Kurs: 1 € = 4,3632 zł</span>
+    </div>
+  </div>
+</header>
+
+<nav class="top">
+  <div class="wrap">
+    <a href="#loty">Loty</a>
+    <a href="#warianty">3 warianty</a>
+    <a href="#hotele">Hotele</a>
+    <a href="#auta">Auta</a>
+    <a href="#transport">Transport</a>
+    <a href="#bilety">Bilety</a>
+    <a href="#mapa">Mapa</a>
+    <a href="#checklist">Checklista</a>
+    <button id="themeBtn" type="button">◐ Motyw</button>
+  </div>
+</nav>
+
+<!-- ============ LOTY ============ -->
+<section id="loty">
+<div class="wrap">
+  <h2>Loty — Ryanair, bezpośrednio</h2>
+
+  <div class="grid g2">
+    <div class="card">
+      <h4>Tam · środa 30 września 2026</h4>
+      <div class="flight">
+        <div><div class="time">06:45</div><div class="code">WRO</div></div>
+        <div class="mid">1 godz. 40 min<br>bezpośrednio</div>
+        <div><div class="time">08:25</div><div class="code">BGY</div></div>
+      </div>
+      <small>Wrocław Strachowice → Milan Bergamo Orio al Serio. Na lotnisku we Wrocławiu bądźcie o <strong>04:45</strong>.</small>
+    </div>
+
+    <div class="card">
+      <h4>Powrót · piątek 2 października 2026 · 182 zł</h4>
+      <div class="flight">
+        <div><div class="time">08:40</div><div class="code">BGY</div></div>
+        <div class="mid">1 godz. 40 min<br>bezpośrednio</div>
+        <div><div class="time">10:20</div><div class="code">WRO</div></div>
+      </div>
+      <small>Na BGY bądźcie o <strong>06:45</strong> → autobus z Mediolanu musi ruszyć ok. <strong>05:15</strong>.</small>
+    </div>
+  </div>
+
+  <div class="note warn">
+    <strong>⚠ Poranek powrotu jest napięty — zaplanujcie go teraz</strong>
+    Pierwsze autobusy Milano Centrale → BGY ruszają ok. 04:00–04:30 i jadą 50–60 min.
+    Kupcie bilet na kurs ok. <strong>05:00–05:15</strong> z góry.
+    Alternatywa: ostatnią noc spać w Bergamo (5 min od lotniska) — wtedy śpicie o 2 godziny dłużej.
+  </div>
+
+  <div class="btns">
+    <a class="btn" href="https://www.ryanair.com/pl/pl" target="_blank" rel="noopener">Ryanair — odprawa online</a>
+    <a class="btn sec" href="https://www.milanbergamoairport.it/en/" target="_blank" rel="noopener">Lotnisko BGY — info</a>
+    <a class="btn sec" href="https://airport.wroclaw.pl/" target="_blank" rel="noopener">Lotnisko Wrocław</a>
+  </div>
+
+  <p style="margin-top:14px"><small>182 zł to cena widoczna przy locie powrotnym w Waszej rezerwacji. Do budżetu doliczcie jeszcze lot „tam", bagaż i wybór miejsc — Ryanair pokazuje je osobno.</small></p>
+</div>
+</section>
+
+<!-- ============ WARIANTY ============ -->
+<section id="warianty">
+<div class="wrap">
+  <h2>Trzy warianty — wybierzcie jeden</h2>
+  <p style="max-width:70ch">Każdy wariant to te same 2 pełne dni zwiedzania (środa + czwartek), ta sama baza noclegowa w Mediolanie i ten sam transfer z lotniska. Różni je tylko to, co robicie w czwartek.</p>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tab-a" aria-controls="p-a" aria-selected="true">
+      <span class="t-lab">Wariant A</span>
+      <span class="t-name">2 dni nad Como</span>
+      <span class="t-sum">Miasto + Brunate, potem środek jeziora</span>
+    </button>
+    <button class="tab" role="tab" id="tab-b" aria-controls="p-b" aria-selected="false">
+      <span class="t-lab">Wariant B</span>
+      <span class="t-name">Como + Mediolan</span>
+      <span class="t-sum">Jezioro, potem Duomo i centrum</span>
+    </button>
+    <button class="tab" role="tab" id="tab-c" aria-controls="p-c" aria-selected="false">
+      <span class="t-lab">Wariant C</span>
+      <span class="t-name">Como + Werona</span>
+      <span class="t-sum">Jezioro, potem Arena i Julia</span>
+    </button>
+  </div>
+
+  <!-- ---------- WARIANT A ---------- -->
+  <div class="panel" id="p-a" role="tabpanel" aria-labelledby="tab-a">
+    <div class="card">
+      <h3 style="margin-top:0">Wariant A — dwa dni nad jeziorem Como</h3>
+      <p>Najspokojniejszy wariant i ten, który wykorzystuje niemal wszystkie punkty z Waszej mapy. Dzień 1 to miasto Como i taras widokowy w Brunate, dzień 2 — środkowa część jeziora promami: Varenna, Bellagio, Tremezzina.</p>
+    </div>
+
+    <div class="day">
+      <h3>Dzień 1 · środa 30.09 — Como i Brunate</h3>
+      <p class="dmeta">Lądowanie → miasto → funikular → zachód słońca nad jeziorem</p>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:25</span><span class="st-t">Lądowanie BGY, autobus do Mediolanu</span></div>
+      <p>Autobus <a href="https://www.terravision.eu/airport_transfer/bus-bergamo-airport-milan/" target="_blank" rel="noopener">Terravision</a> lub <a href="https://autostradale.it/en/i-nostri-servizi/transfer-aeroportuali/milano-stazione-centrale-bergamo-orio-al-serio/" target="_blank" rel="noopener">Autostradale</a> spod terminalu — 5 € / os., 50 min, co 20–30 min.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">09:50</span><span class="st-t">Milano Centrale — zostawiacie bagaże</span></div>
+      <p>Hotel przyjmie bagaż przed zameldowaniem, albo przechowalnia KiPoint na dworcu (ok. 6 €/szt. za 5 h). Potem od razu na peron.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:20</span><span class="st-t">Pociąg Milano Centrale → Como San Giovanni</span></div>
+      <p><a href="https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-como-s-giovanni-route/" target="_blank" rel="noopener">Trenord</a>, 40 min, od <strong>5,20 €</strong>. Bilet kasujecie/aktywujecie przed wejściem.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">11:10</span><span class="st-t">Piazza del Duomo i katedra w Como</span></div>
+      <p>Gotyk przechodzący w renesans, wejście <strong>bezpłatne</strong>. Obok Broletto i Teatro Sociale.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8117842,9.082634" target="_blank" rel="noopener">mapa</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">12:00</span><span class="st-t">Lungolago i Life Electric</span></div>
+      <p>Spacer nadbrzeżem do stalowej rzeźby Daniela Libeskinda na cyplu — pomnik Alessandro Volty.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.815375,9.080258" target="_blank" rel="noopener">mapa</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">13:00</span><span class="st-t">Obiad w centrum Como</span></div>
+      <p>Okolice Piazza San Fedele — tańsze i mniej turystyczne niż nabrzeże. Budżet 18–25 € / os.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">14:30</span><span class="st-t">Funikular Como → Brunate</span></div>
+      <p>7 minut w górę, <strong>7,20 € w dwie strony</strong>. Z tarasu w Brunate widok na całe ramię jeziora; dalej 30 min pieszo do latarni Faro Voltiano.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8179375,9.0946552" target="_blank" rel="noopener">mapa</a>
+      <a class="pin" href="https://www.funicolarecomo.it/inglese/oraricentro.htm" target="_blank" rel="noopener">rozkład</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">17:00</span><span class="st-t">Villa Olmo i spacer do Cernobbio</span></div>
+      <p>Neoklasycystyczna willa z parkiem nad wodą (park bezpłatny). Kto ma siłę — 40 min dalej wzdłuż brzegu do Cernobbio: park Villa Pizzo i słynny <em>Hotel Villa d'Este</em> (Villa Bernasconi w środy jest zamknięta).
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.818983,9.0653757" target="_blank" rel="noopener">Villa Olmo</a>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8450415,9.0793462" target="_blank" rel="noopener">Villa d'Este</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">19:30</span><span class="st-t">Pociąg powrotny do Mediolanu, zameldowanie</span></div>
+      <p>Ostatnie pociągi Como → Milano ok. 21:40. Kolacja już w Mediolanie.</p></div>
+    </div>
+
+    <div class="day">
+      <h3>Dzień 2 · czwartek 01.10 — środek jeziora promem</h3>
+      <p class="dmeta">Varenna → Bellagio → Tremezzina → Varenna · bilet swobodnej żeglugi</p>
+
+      <div class="note ok">
+        <strong>Klucz do tego dnia: bilet „libera circolazione" strefa centralna — 17,50 € / os.</strong>
+        Nieograniczone przeprawy między Bellagio, Varenną, Menaggio i Cadenabbią przez cały dzień. Kupujecie w kasie przy przystani.
+        <a href="https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/rates-lake-como/" target="_blank" rel="noopener">Cennik Navigazione Laghi →</a>
+      </div>
+
+      <div class="stop"><div class="st-h"><span class="hr">07:25</span><span class="st-t">Pociąg Milano Centrale → Varenna-Esino</span></div>
+      <p>Linia na Tirano, ok. 1 godz., 7–9 € / os. <a href="https://www.trenitalia.com/" target="_blank" rel="noopener">Trenitalia</a> · <a href="https://www.trenord.it/en/" target="_blank" rel="noopener">Trenord</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:40</span><span class="st-t">Varenna — Passeggiata degli Innamorati</span></div>
+      <p>„Ścieżka zakochanych" zawieszona nad wodą i Riva Grande z kolorowymi kamienicami. Rano jest tu pusto — to najlepszy moment na zdjęcia.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=46.011868,9.2829034" target="_blank" rel="noopener">Passeggiata</a>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=46.0111464,9.2828646" target="_blank" rel="noopener">Riva Grande</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:15</span><span class="st-t">Prom Varenna → Bellagio</span></div>
+      <p>15–20 min. Przystań: <a href="https://www.google.com/maps/search/?api=1&amp;query=46.0134,9.28292" target="_blank" rel="noopener">Via Imbarcadero, Varenna</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:40</span><span class="st-t">Bellagio — Salita Serbelloni i Punta Spartivento</span></div>
+      <p>Najbardziej fotografowane schody nad jeziorem, a 10 min dalej cypel, na którym jezioro rozdziela się na dwa ramiona. Po drodze <strong>Ogrody Villa Melzi</strong> (ok. 8 €) i park Villa Serbelloni.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.9866127,9.2623658" target="_blank" rel="noopener">Salita Serbelloni</a>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.9912845,9.2654879" target="_blank" rel="noopener">Punta Spartivento</a>
+      <a class="pin" href="https://www.giardinidivillamelzi.it/" target="_blank" rel="noopener">Villa Melzi</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">13:00</span><span class="st-t">Obiad w Bellagio</span></div>
+      <p>Uliczki powyżej nabrzeża — te przy samej wodzie mają ceny turystyczne.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">14:15</span><span class="st-t">Prom Bellagio → Cadenabbia / Tremezzina</span></div>
+      <p><a href="https://www.google.com/maps/search/?api=1&amp;query=45.99065,9.23762" target="_blank" rel="noopener">Przystań Cadenabbia</a> — stąd kilka minut pieszo do Villa Carlotta.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">14:45</span><span class="st-t">Villa Carlotta — 17,50 € / os.</span></div>
+      <p>Muzeum i 8 ha ogrodów tarasowych schodzących do wody; w październiku czynne 10:00–18:00 (ostatni bilet 17:00). Obok <em>Venus Gulf</em> i Villa Balbiano.
+      <a class="pin" href="https://www.villacarlotta.it/en/visit/" target="_blank" rel="noopener">bilety</a>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.9710195,9.1962176" target="_blank" rel="noopener">Venus Gulf</a>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.9670591,9.1863462" target="_blank" rel="noopener">Villa Balbiano</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">17:00</span><span class="st-t">Prom z powrotem do Varenny</span></div>
+      <p>Po drodze możecie wysiąść w <a href="https://www.google.com/maps/search/?api=1&amp;query=46.01697,9.23689" target="_blank" rel="noopener">Menaggio</a> na kawę — bilet swobodnej żeglugi na to pozwala.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">18:30</span><span class="st-t">Pociąg Varenna → Milano Centrale</span></div>
+      <p>Ostatnie kursy ok. 21:00 — sprawdźcie rozkład rano, bo wieczorem są rzadziej.</p></div>
+    </div>
+
+    <div class="card">
+      <h4>Alternatywa zamiast Villa Carlotta</h4>
+      <p style="margin-bottom:0"><strong>Villa del Balbianello</strong> (Lenno) — ogród 15 €, ogród + willa z przewodnikiem 25 €. Kręcono tu <em>Gwiezdne wojny II</em> i <em>Casino Royale</em>. Uwaga: <strong>zamknięta w poniedziałki i środy</strong>, w czwartek jest otwarta. Dojście z Lenno ok. 25 min pod górę albo taksówką wodną.
+      <a href="https://fondoambiente.it/luoghi/villa-del-balbianello/visita" target="_blank" rel="noopener">FAI — bilety i godziny →</a></p>
+    </div>
+
+    <div class="card">
+      <h3>Koszt wariantu A — na osobę, bez lotu, hotelu i jedzenia</h3>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Pozycja</th><th class="num">EUR</th><th class="num">PLN</th></tr></thead>
+        <tbody>
+          <tr><td>Autobus BGY → Mediolan (Terravision)</td><td class="num">5,00</td><td class="num">22</td></tr>
+          <tr><td>Autobus Mediolan → BGY (powrót)</td><td class="num">5,00</td><td class="num">22</td></tr>
+          <tr><td>Pociągi Mediolan ⇄ Como (dzień 1)</td><td class="num">10,40</td><td class="num">45</td></tr>
+          <tr><td>Funikular Como–Brunate (tam i z powrotem)</td><td class="num">7,20</td><td class="num">31</td></tr>
+          <tr><td>Pociągi Mediolan ⇄ Varenna (dzień 2)</td><td class="num">15,00</td><td class="num">65</td></tr>
+          <tr><td>Promy — bilet dzienny strefa centralna</td><td class="num">17,50</td><td class="num">76</td></tr>
+          <tr><td>Villa Carlotta</td><td class="num">17,50</td><td class="num">76</td></tr>
+          <tr><td>Metro/tramwaje ATM w Mediolanie (4 przejazdy)</td><td class="num">8,80</td><td class="num">38</td></tr>
+          <tr class="total"><td>Razem / osoba</td><td class="num">86,40</td><td class="num">377 zł</td></tr>
+          <tr class="total"><td>Razem za 2 osoby</td><td class="num">172,80</td><td class="num">754 zł</td></tr>
+        </tbody>
+      </table></div>
+      <small>Katedra w Como, Life Electric, Punta Spartivento, Passeggiata degli Innamorati i parki nad jeziorem — bezpłatnie. Kwoty w złotych zaokrąglone do pełnych złotówek, sumy przeliczone z kwoty w euro.</small>
+    </div>
+  </div>
+
+  <!-- ---------- WARIANT B ---------- -->
+  <div class="panel" id="p-b" role="tabpanel" aria-labelledby="tab-b" hidden>
+    <div class="card">
+      <h3 style="margin-top:0">Wariant B — dzień nad Como + dzień w Mediolanie</h3>
+      <p>Najbardziej „kontrastowy" wariant: w środę jezioro i góry, w czwartek wielkie miasto. Zero dodatkowych dojazdów w dniu drugim — wszystko macie pod hotelem.</p>
+    </div>
+
+    <div class="day">
+      <h3>Dzień 1 · środa 30.09 — Como, Brunate i rejs do Bellagio</h3>
+      <p class="dmeta">Wersja „best of" jeziora w jeden dzień</p>
+
+      <div class="note ok">
+        <strong>Bilet swobodnej żeglugi Como ⇄ Bellagio — 27 € / os.</strong>
+        Opłaca się już przy podróży w dwie strony (pojedynczy rejs szybkim wodolotem to 17 €). Wodolot z Como do Bellagio płynie 45 min, zwykły prom 2 godziny — wybierzcie wodolot.
+      </div>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:25</span><span class="st-t">Lądowanie, autobus BGY → Milano Centrale</span></div>
+      <p>5 € / os., 50 min. Bagaże zostawiacie w hotelu lub w przechowalni na dworcu.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:20</span><span class="st-t">Pociąg do Como San Giovanni</span></div>
+      <p>40 min, od 5,20 €. <a href="https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-como-s-giovanni-route/" target="_blank" rel="noopener">Trenord →</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">11:15</span><span class="st-t">Katedra, Piazza del Duomo, Life Electric</span></div>
+      <p>Szybka pętla po starówce i nabrzeżu — ok. 1,5 godziny.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8117842,9.082634" target="_blank" rel="noopener">Duomo</a>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.815375,9.080258" target="_blank" rel="noopener">Life Electric</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">12:45</span><span class="st-t">Funikular do Brunate — 7,20 € w dwie strony</span></div>
+      <p>Godzina na górze w zupełności wystarczy na widok i kawę.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8179375,9.0946552" target="_blank" rel="noopener">mapa</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">14:30</span><span class="st-t">Wodolot Como → Bellagio</span></div>
+      <p>45 min, po drodze mijacie <a href="https://www.google.com/maps/search/?api=1&amp;query=45.8801012,9.1384691" target="_blank" rel="noopener">Villa Oleandra Clooneya w Laglio</a> i <a href="https://www.google.com/maps/search/?api=1&amp;query=45.9106803,9.1544772" target="_blank" rel="noopener">wąwóz Orrido w Nesso</a>. Sam rejs to jedna z najładniejszych rzeczy w tym wyjeździe.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">15:30</span><span class="st-t">Bellagio — Salita Serbelloni, Punta Spartivento</span></div>
+      <p>Dwie godziny na perłę jeziora. Kolejność: schody → cypel → kawa nad wodą.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.9866127,9.2623658" target="_blank" rel="noopener">Salita Serbelloni</a>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.9912845,9.2654879" target="_blank" rel="noopener">Punta Spartivento</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">17:45</span><span class="st-t">Wodolot z powrotem do Como, pociąg do Mediolanu</span></div>
+      <p>Sprawdźcie ostatni kurs wodolotu <strong>jeszcze rano</strong> w kasie — poza sezonem bywa wcześnie.</p></div>
+    </div>
+
+    <div class="day">
+      <h3>Dzień 2 · czwartek 01.10 — Mediolan</h3>
+      <p class="dmeta">Duomo → Galleria → La Scala → Castello → Navigli</p>
+
+      <div class="note warn">
+        <strong>Dwie rzeczy rezerwujcie z góry, i to dziś</strong>
+        <em>Ostatnia Wieczerza</em> Leonarda — bilety (15 €) znikają na tygodnie naprzód:
+        <a href="https://cenacolovinciano.vivaticket.it/" target="_blank" rel="noopener">cenacolovinciano.vivaticket.it</a>.
+        Taras Duomo z windą też ma limit wejść o danej godzinie:
+        <a href="https://ticket.duomomilano.it/" target="_blank" rel="noopener">ticket.duomomilano.it</a>.
+      </div>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:45</span><span class="st-t">Duomo di Milano — wnętrze i tarasy</span></div>
+      <p>Wchodźcie zaraz po otwarciu. <strong>Duomo Pass z windą 32 €</strong>, schodami 26 € (250 stopni). Sama katedra bez tarasów — 11 €. Tarasy to najlepszy punkt widokowy w mieście.
+      <a class="pin" href="https://ticket.duomomilano.it/" target="_blank" rel="noopener">bilety</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">11:00</span><span class="st-t">Galleria Vittorio Emanuele II i Teatro alla Scala</span></div>
+      <p>Przejście przez Gallerię bezpłatne — nie zapomnijcie obrócić się na pięcie na byku w mozaice. Muzeum La Scali ok. 12 €.
+      <a class="pin" href="https://www.teatroallascala.org/en/" target="_blank" rel="noopener">La Scala</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">12:15</span><span class="st-t">Ostatnia Wieczerza — Santa Maria delle Grazie</span></div>
+      <p>15 € + 2 € rezerwacji, wejście trwa dokładnie 15 minut o wyznaczonej godzinie. Metro M1/M2 Cadorna.
+      <a class="pin" href="https://cenacolovinciano.org/en/" target="_blank" rel="noopener">info</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">13:30</span><span class="st-t">Obiad + Castello Sforzesco i Parco Sempione</span></div>
+      <p>Dziedzińce zamku i park — <strong>bezpłatnie</strong>. Muzea w zamku 5 €, jest tam ostatnia, niedokończona <em>Pietà Rondanini</em> Michała Anioła.
+      <a class="pin" href="https://www.milanocastello.it/" target="_blank" rel="noopener">Castello</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">16:00</span><span class="st-t">Brera — dzielnica artystów</span></div>
+      <p>Najładniejsze uliczki Mediolanu. Pinacoteca di Brera 15 € (Rafael, Caravaggio, Piero della Francesca) — jeśli macie dość muzeów, wystarczy sam spacer.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">18:30</span><span class="st-t">Navigli — kanały i aperitivo</span></div>
+      <p>Metro M2 Porta Genova. <em>Apericena</em>: drink + bufet za 10–15 € — w praktyce to kolacja. Najlepsze zakończenie dnia w Mediolanie.</p></div>
+    </div>
+
+    <div class="card">
+      <h3>Koszt wariantu B — na osobę, bez lotu, hotelu i jedzenia</h3>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Pozycja</th><th class="num">EUR</th><th class="num">PLN</th></tr></thead>
+        <tbody>
+          <tr><td>Autobusy BGY ⇄ Mediolan</td><td class="num">10,00</td><td class="num">44</td></tr>
+          <tr><td>Pociągi Mediolan ⇄ Como</td><td class="num">10,40</td><td class="num">45</td></tr>
+          <tr><td>Funikular Como–Brunate</td><td class="num">7,20</td><td class="num">31</td></tr>
+          <tr><td>Promy — bilet dzienny Como ⇄ Bellagio</td><td class="num">27,00</td><td class="num">118</td></tr>
+          <tr><td>Duomo Pass z windą (tarasy + muzeum)</td><td class="num">32,00</td><td class="num">140</td></tr>
+          <tr><td>Ostatnia Wieczerza (bilet + rezerwacja)</td><td class="num">17,00</td><td class="num">74</td></tr>
+          <tr><td>Bilet dzienny ATM 24 h (Mediolan)</td><td class="num">7,60</td><td class="num">33</td></tr>
+          <tr class="total"><td>Razem / osoba</td><td class="num">111,20</td><td class="num">485 zł</td></tr>
+          <tr class="total"><td>Razem za 2 osoby</td><td class="num">222,40</td><td class="num">970 zł</td></tr>
+        </tbody>
+      </table></div>
+      <small>Oszczędność: Duomo schodami zamiast windy to −6 € / os., a rezygnacja z Ostatniej Wieczerzy −17 € / os.</small>
+    </div>
+  </div>
+
+  <!-- ---------- WARIANT C ---------- -->
+  <div class="panel" id="p-c" role="tabpanel" aria-labelledby="tab-c" hidden>
+    <div class="card">
+      <h3 style="margin-top:0">Wariant C — dzień nad Como + dzień w Weronie</h3>
+      <p>Wariant dla tych, którzy chcą zobaczyć dwa zupełnie różne światy: alpejskie jezioro i rzymsko-średniowieczne miasto Szekspira. Werona jest mniejsza i przyjemniejsza do chodzenia niż Mediolan — cała starówka mieści się w zakolu rzeki Adygi.</p>
+    </div>
+
+    <div class="day">
+      <h3>Dzień 1 · środa 30.09 — Como, Brunate i rejs do Bellagio</h3>
+      <p class="dmeta">Identycznie jak w wariancie B</p>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:25</span><span class="st-t">BGY → Milano Centrale autobusem, bagaże do hotelu</span></div>
+      <p>5 € / os., 50 min.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:20</span><span class="st-t">Pociąg do Como (40 min, od 5,20 €)</span></div>
+      <p><a href="https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-como-s-giovanni-route/" target="_blank" rel="noopener">Trenord →</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">11:15</span><span class="st-t">Katedra, starówka, Life Electric</span></div>
+      <p><a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8117842,9.082634" target="_blank" rel="noopener">Duomo</a>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.815375,9.080258" target="_blank" rel="noopener">Life Electric</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">12:45</span><span class="st-t">Funikular do Brunate — 7,20 €</span></div>
+      <p><a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8179375,9.0946552" target="_blank" rel="noopener">mapa</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">14:30</span><span class="st-t">Wodolot Como → Bellagio, bilet dzienny 27 €</span></div>
+      <p>Salita Serbelloni i Punta Spartivento, powrót wodolotem, pociąg do Mediolanu.</p></div>
+    </div>
+
+    <div class="day">
+      <h3>Dzień 2 · czwartek 01.10 — Werona</h3>
+      <p class="dmeta">Pociągiem 1 godz. 15 min · cały dzień na piechotę</p>
+
+      <div class="note ok">
+        <strong>VeronaCard 24 h — 20 € / os. i to się zwraca już przy trzeciej atrakcji</strong>
+        Obejmuje Arenę, Dom Julii, Wieżę Lamberti, Castelvecchio, zespół katedralny, kościoły San Zeno i Sant'Anastasia,
+        <strong>oraz wszystkie autobusy miejskie ATV</strong>. Karta aktywuje się przy pierwszym użyciu.
+        <a href="https://turismo.comune.verona.it/nqcontent.cfm?a_id=38678" target="_blank" rel="noopener">Oficjalna strona VeronaCard →</a>
+      </div>
+
+      <div class="stop"><div class="st-h"><span class="hr">07:30</span><span class="st-t">Pociąg Milano Centrale → Verona Porta Nuova</span></div>
+      <p><strong>Frecciarossa / Italo</strong> 1 godz. 10 min, od ok. 19,90 € przy wcześniejszej rezerwacji.
+      <strong>Regionale Veloce</strong> 1 godz. 26 min, ok. 12 € bez rezerwacji. Kursuje ok. 29 pociągów dziennie.
+      <a class="pin" href="https://www.trenitalia.com/" target="_blank" rel="noopener">Trenitalia</a>
+      <a class="pin" href="https://www.italotreno.com/en" target="_blank" rel="noopener">Italo</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">09:00</span><span class="st-t">Piazza Brà i Arena di Verona</span></div>
+      <p>15 minut pieszo z dworca. Rzymski amfiteatr z I wieku, starszy od Koloseum i wciąż używany — latem grają tu opery. Zwiedzanie dzienne wt.–nd. 9:00–19:00, ok. 10 € albo <strong>bezpłatnie z VeronaCard</strong>.
+      <a class="pin" href="https://www.arena.it/" target="_blank" rel="noopener">Arena</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:30</span><span class="st-t">Via Mazzini i Casa di Giulietta</span></div>
+      <p>Deptak handlowy prowadzi prosto pod słynny balkon. Dziedziniec z posągiem Julii bezpłatny, wejście do domu-muzeum z balkonem ok. 12 € lub w VeronaCard. Rano jest znacznie mniej tłoczno.
+      <a class="pin" href="https://casadigiulietta.comune.verona.it/" target="_blank" rel="noopener">Dom Julii</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">11:30</span><span class="st-t">Piazza delle Erbe i Torre dei Lamberti</span></div>
+      <p>Najpiękniejszy plac miasta na miejscu rzymskiego forum. Wieża ma 84 m — windą na górę, a stamtąd widok na dachy Werony i zakole Adygi.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">13:00</span><span class="st-t">Obiad — kuchnia weneckiej Wenecji Euganejskiej</span></div>
+      <p>Spróbujcie <em>risotto all'Amarone</em> albo <em>pastissada de caval</em>. Boczne uliczki przy Piazza delle Erbe, 18–25 € / os.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">14:30</span><span class="st-t">Ponte Pietra i Castel San Pietro</span></div>
+      <p>Rzymski most z I w. p.n.e., a za nim schody (lub kolejka linowa, 2 €) na taras Castel San Pietro — <strong>najlepszy widok na Weronę</strong>, zwłaszcza w świetle popołudnia.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">16:00</span><span class="st-t">Castelvecchio i Ponte Scaligero</span></div>
+      <p>Ceglana forteca rodu Scaligerich z XIV w. i jej most z blankami w kształcie jaskółczych ogonów. Muzeum w VeronaCard.
+      <a class="pin" href="https://www.museiverona.com/" target="_blank" rel="noopener">Musei Civici</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">18:20</span><span class="st-t">Pociąg powrotny do Mediolanu</span></div>
+      <p>Pociągi kursują do późna — ostatnie bezpośrednie ok. 21:30. Kolacja w Weronie albo już przy hotelu.</p></div>
+    </div>
+
+    <div class="card">
+      <h3>Koszt wariantu C — na osobę, bez lotu, hotelu i jedzenia</h3>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Pozycja</th><th class="num">EUR</th><th class="num">PLN</th></tr></thead>
+        <tbody>
+          <tr><td>Autobusy BGY ⇄ Mediolan</td><td class="num">10,00</td><td class="num">44</td></tr>
+          <tr><td>Pociągi Mediolan ⇄ Como</td><td class="num">10,40</td><td class="num">45</td></tr>
+          <tr><td>Funikular Como–Brunate</td><td class="num">7,20</td><td class="num">31</td></tr>
+          <tr><td>Promy — bilet dzienny Como ⇄ Bellagio</td><td class="num">27,00</td><td class="num">118</td></tr>
+          <tr><td>Pociągi Mediolan ⇄ Werona (Regionale Veloce)</td><td class="num">24,00</td><td class="num">105</td></tr>
+          <tr><td>VeronaCard 24 h (Arena, Julia, Lamberti, Castelvecchio + autobusy)</td><td class="num">20,00</td><td class="num">87</td></tr>
+          <tr><td>Metro ATM w Mediolanie (2 przejazdy)</td><td class="num">4,40</td><td class="num">19</td></tr>
+          <tr class="total"><td>Razem / osoba</td><td class="num">103,00</td><td class="num">449 zł</td></tr>
+          <tr class="total"><td>Razem za 2 osoby</td><td class="num">206,00</td><td class="num">899 zł</td></tr>
+        </tbody>
+      </table></div>
+      <small>Frecciarossa zamiast Regionale to +16 € / os. w dwie strony, ale oszczędza ok. 35 min.</small>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:22px">
+    <h3>Który wybrać? Krótko</h3>
+    <div class="grid g3">
+      <div>
+        <h4 style="color:var(--accent2)">Wariant A</h4>
+        <p style="font-size:14.5px">Najtańszy i najspokojniejszy. Wykorzystuje prawie wszystkie punkty z Waszej mapy. <strong>Bierzcie, jeśli jezioro jest celem samym w sobie.</strong></p>
+      </div>
+      <div>
+        <h4 style="color:var(--accent2)">Wariant B</h4>
+        <p style="font-size:14.5px">Najbardziej „zaliczeniowy" — dwa ikoniczne miejsca w dwa dni, zero rannych pobudek w dzień 2. <strong>Bierzcie, jeśli jesteście pierwszy raz we Włoszech.</strong></p>
+      </div>
+      <div>
+        <h4 style="color:var(--accent2)">Wariant C</h4>
+        <p style="font-size:14.5px">Najładniejsze miasto z tych trzech i najmniej tłoku. Werona to 3 godziny spaceru, nie maraton. <strong>Bierzcie, jeśli Mediolan już znacie.</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ============ HOTELE ============ -->
+<section id="hotele">
+<div class="wrap">
+  <h2>Hotele — 2 noce, 2 osoby, budżet do 1000 zł</h2>
+
+  <div class="grid g2">
+    <div class="card">
+      <h4>Wasz budżet w euro</h4>
+      <div class="kv"><span>Cel — 1000 zł za 2 noce</span><span>≈ 229 €</span></div>
+      <div class="kv"><span>To za noc</span><span>≈ 115 €</span></div>
+      <div class="kv"><span>Maksimum — 1400 zł za 2 noce</span><span>≈ 321 €</span></div>
+      <div class="kv"><span>To za noc</span><span>≈ 160 €</span></div>
+      <p style="margin:12px 0 0"><small>Przelicznik NBP z 17.09.2026: 1 € = 4,3632 zł. Doliczcie miejską taksę turystyczną: w Mediolanie ok. 4–5 € od osoby za noc, płatne na miejscu.</small></p>
+    </div>
+
+    <div class="card">
+      <h4>Gdzie konkretnie szukać</h4>
+      <ul class="clean">
+        <li><strong>Okolice Milano Centrale</strong> — najlepszy wybór przy Waszym planie: autobusy lotniskowe i wszystkie pociągi do Como/Werony odjeżdżają spod hotelu. Najwięcej opcji w budżecie.</li>
+        <li><strong>Porta Venezia / Loreto</strong> — spokojniej, 1 przystanek metra od Centrale, często taniej o 15–20%.</li>
+        <li><strong>Navigli / Porta Genova</strong> — najprzyjemniej wieczorem, ale dojazd na dworzec to 20 min metrem.</li>
+      </ul>
+      <p style="margin-bottom:0"><small>Filtrujcie: <em>ocena od 8,0</em>, <em>bezpłatne anulowanie</em>, <em>do 1 km od centrum</em>.</small></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Gotowe wyszukiwania Booking.com — daty już ustawione</h3>
+    <p>30.09 → 02.10.2026 · 2 dorosłych · 1 pokój · ceny w złotówkach · sortowanie od najtańszych.</p>
+    <div class="btns">
+      <a class="btn" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Mediolan%2C+Lombardia%2C+W%C5%82ochy&checkin=2026-09-30&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price&nflt=price%3DPLN-min-1000-1">Mediolan — do 1000 zł</a>
+      <a class="btn" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Mediolan%2C+Lombardia%2C+W%C5%82ochy&checkin=2026-09-30&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price&nflt=price%3DPLN-min-1400-1">Mediolan — do 1400 zł</a>
+      <a class="btn sec" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Milano+Centrale%2C+Mediolan%2C+W%C5%82ochy&checkin=2026-09-30&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price">Przy dworcu Centrale</a>
+      <a class="btn sec" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Como%2C+Lombardia%2C+W%C5%82ochy&checkin=2026-09-30&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price">Como — porównanie</a>
+      <a class="btn sec" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Bergamo%2C+Lombardia%2C+W%C5%82ochy&checkin=2026-09-30&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price">Bergamo — blisko lotniska</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Konkretne obiekty do sprawdzenia</h3>
+    <p>Wszystkie sprawdzone, w rejonie Centrale/centrum, zwykle mieszczą się w budżecie. Linki otwierają je z Waszymi datami.</p>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Obiekt</th><th>Lokalizacja</th><th>Orientacyjnie / 2 noce</th><th></th></tr></thead>
+      <tbody>
+        <tr><td><strong>B&amp;B Hotel Milano Central Station</strong></td><td>150 m od Centrale</td><td class="num">550–850 zł</td>
+          <td><a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=B%26B+Hotel+Milano+Central+Station&checkin=2026-09-30&checkout=2026-10-02&group_adults=2&no_rooms=1&selected_currency=PLN">sprawdź →</a></td></tr>
+        <tr><td><strong>Hotel Bernina</strong></td><td>naprzeciw Centrale</td><td class="num">600–900 zł</td>
+          <td><a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Hotel+Bernina+Milano&checkin=2026-09-30&checkout=2026-10-02&group_adults=2&no_rooms=1&selected_currency=PLN">sprawdź →</a></td></tr>
+        <tr><td><strong>Hotel Garda</strong></td><td>5 min od Centrale</td><td class="num">600–950 zł</td>
+          <td><a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Hotel+Garda+Milano&checkin=2026-09-30&checkout=2026-10-02&group_adults=2&no_rooms=1&selected_currency=PLN">sprawdź →</a></td></tr>
+        <tr><td><strong>Ostello Bello Grande</strong></td><td>przy Centrale, pokój prywatny</td><td class="num">450–750 zł</td>
+          <td><a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Ostello+Bello+Grande+Milano&checkin=2026-09-30&checkout=2026-10-02&group_adults=2&no_rooms=1&selected_currency=PLN">sprawdź →</a></td></tr>
+        <tr><td><strong>ibis Milano Centro</strong></td><td>Porta Genova / Navigli</td><td class="num">650–1000 zł</td>
+          <td><a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=ibis+Milano+Centro&checkin=2026-09-30&checkout=2026-10-02&group_adults=2&no_rooms=1&selected_currency=PLN">sprawdź →</a></td></tr>
+        <tr><td><strong>Hotel Berna</strong> ★★★★</td><td>200 m od Centrale</td><td class="num">900–1350 zł</td>
+          <td><a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Hotel+Berna+Milano&checkin=2026-09-30&checkout=2026-10-02&group_adults=2&no_rooms=1&selected_currency=PLN">sprawdź →</a></td></tr>
+        <tr><td><strong>Hotel Sanpi Milano</strong> ★★★★</td><td>Porta Venezia</td><td class="num">950–1400 zł</td>
+          <td><a target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Hotel+Sanpi+Milano&checkin=2026-09-30&checkout=2026-10-02&group_adults=2&no_rooms=1&selected_currency=PLN">sprawdź →</a></td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin:10px 0 0"><small>Ceny orientacyjne — Booking zmienia je codziennie, a wrzesień/październik to wciąż wysoki sezon w Mediolanie. Sprawdźcie, czy w tym terminie nie wypada duże targi (wtedy ceny potrafią się podwoić).</small></p>
+  </div>
+
+  <div class="note warn">
+    <strong>Jeśli wybierzecie wariant A (2 dni nad jeziorem) — rozważcie nocleg w Como zamiast Mediolanu</strong>
+    Oszczędzacie 4 przejazdy pociągiem (≈ 21 € za 2 osoby) i codzienne 80 minut w drodze, a poranki i wieczory macie nad wodą.
+    Minus: dojazd na poranny samolot w piątek jest trudniejszy — pierwszy pociąg Como → Mediolan ok. 04:50, a potem jeszcze autobus na BGY. Przy wariancie A z noclegiem w Como lepiej ostatnią noc przespać w Bergamo.
+  </div>
+</div>
+</section>
+
+<!-- ============ AUTA ============ -->
+<section id="auta">
+<div class="wrap">
+  <h2>Wypożyczalnie samochodów — lotnisko Bergamo (BGY)</h2>
+
+  <div class="note warn">
+    <strong>Czy warto? Przy tym planie raczej nie.</strong>
+    Mediolan ma strefę <strong>Area C</strong> (opłata za wjazd do centrum) i ZTL, parking w centrum to 25–40 € za dobę, a w Bellagio i Varennie w sezonie po prostu nie ma gdzie stanąć.
+    Auto ma sens tylko wtedy, gdy chcecie objechać <strong>zachodni brzeg jeziora</strong>: Laglio (willa Clooneya), Nesso (Orrido), Lenno (Villa del Balbianello), Tremezzina — tam prom nie dowozi wszędzie.
+  </div>
+
+  <div class="card">
+    <h4>Porównywarki — wpiszcie 30.09 godz. 09:00 → 02.10 godz. 07:00</h4>
+    <div class="btns">
+      <a class="btn" target="_blank" rel="noopener" href="https://www.discovercars.com/italy-mainland/bergamo/bgy">DiscoverCars — BGY</a>
+      <a class="btn" target="_blank" rel="noopener" href="https://www.rentalcars.com/en/airport/it/bgy">Rentalcars — BGY</a>
+      <a class="btn sec" target="_blank" rel="noopener" href="https://www.kayak.pl/wypozyczalnie-samochodow">KAYAK</a>
+      <a class="btn sec" target="_blank" rel="noopener" href="https://www.rentcars.com/en/airports/italy/bgy-bergamo-orio-al-serio-bergamo-lombardia">Rentcars</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4>Bezpośrednio u wypożyczalni na BGY</h4>
+    <div class="btns">
+      <a class="btn sec" target="_blank" rel="noopener" href="https://www.europcar.com/en-us/places/car-rental-italy/bergamo/bergamo-airport">Europcar</a>
+      <a class="btn sec" target="_blank" rel="noopener" href="https://www.sixt.com/car-rental/italy/bergamo/bergamo-airport/">Sixt</a>
+      <a class="btn sec" target="_blank" rel="noopener" href="https://www.hertz.com/rentacar/reservation/">Hertz</a>
+      <a class="btn sec" target="_blank" rel="noopener" href="https://www.avis.com/">Avis</a>
+      <a class="btn sec" target="_blank" rel="noopener" href="https://www.locautorent.com/en/">Locauto</a>
+      <a class="btn sec" target="_blank" rel="noopener" href="https://www.noleggiare.it/en">Noleggiare</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Ile to naprawdę kosztuje — 2 doby, auto klasy Fiat Panda / VW Polo</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Pozycja</th><th class="num">EUR</th><th class="num">PLN</th></tr></thead>
+      <tbody>
+        <tr><td>Najem 2 doby (ceny od)</td><td class="num">30–70</td><td class="num">130–305</td></tr>
+        <tr><td>Pełne ubezpieczenie bez udziału własnego (SCDW)</td><td class="num">40–60</td><td class="num">175–260</td></tr>
+        <tr><td>Paliwo — ok. 250 km wokół jeziora</td><td class="num">30–35</td><td class="num">130–155</td></tr>
+        <tr><td>Autostrady (A4, A9) w dwie strony</td><td class="num">12–18</td><td class="num">52–79</td></tr>
+        <tr><td>Parkingi (Como, Tremezzina, Bellagio)</td><td class="num">25–40</td><td class="num">110–175</td></tr>
+        <tr class="total"><td>Realny koszt za 2 doby (za auto, nie za osobę)</td><td class="num">137–223</td><td class="num">600–975 zł</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin:12px 0 0"><small><strong>Uwaga na kaucję:</strong> wypożyczalnie blokują na karcie kredytowej 700–1500 € i wymagają karty <em>kredytowej</em> imiennej kierowcy — debetowa zwykle nie wystarczy. Prawo jazdy ponad 1 rok, kierowca zwykle od 21–25 lat (młodszy = dopłata). Zdjęcia auta przed wyjazdem z parkingu — obowiązkowo.</small></p>
+  </div>
+</div>
+</section>
+
+<!-- ============ TRANSPORT ============ -->
+<section id="transport">
+<div class="wrap">
+  <h2>Transport — wszystkie ceny i linki do biletów</h2>
+
+  <div class="card">
+    <h3>Z lotniska Bergamo (BGY)</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Połączenie</th><th>Przewoźnik</th><th>Czas</th><th class="num">Cena / os.</th><th>Bilety</th></tr></thead>
+      <tbody>
+        <tr><td>BGY → Milano Centrale</td><td>Terravision</td><td>50 min</td><td class="num">5 € · 10 € r/t</td>
+          <td><a target="_blank" rel="noopener" href="https://www.terravision.eu/airport_transfer/bus-bergamo-airport-milan/">terravision.eu</a></td></tr>
+        <tr><td>BGY → Milano Centrale</td><td>Autostradale</td><td>50–60 min</td><td class="num">od 5 €</td>
+          <td><a target="_blank" rel="noopener" href="https://autostradale.it/en/i-nostri-servizi/transfer-aeroportuali/milano-stazione-centrale-bergamo-orio-al-serio/">autostradale.it</a></td></tr>
+        <tr><td>BGY → Milano Centrale</td><td>Orio Shuttle</td><td>50–60 min</td><td class="num">od 5 €</td>
+          <td><a target="_blank" rel="noopener" href="https://www.orioshuttle.com/">orioshuttle.com</a></td></tr>
+        <tr><td><strong>BGY → Como San Giovanni</strong> (bezpośrednio)</td><td>flibco</td><td>1 godz. 45 min</td><td class="num">od 11,99 €</td>
+          <td><a target="_blank" rel="noopener" href="https://www.flibco.com/en/shuttle/bus-bergamo-milan-airport-como">flibco.com</a></td></tr>
+        <tr><td>BGY → centrum Bergamo</td><td>ATB linia 1</td><td>15 min</td><td class="num">ok. 2,80 €</td>
+          <td><a target="_blank" rel="noopener" href="https://www.atb.bergamo.it/trasporti-pubblici/biglietti">atb.bergamo.it</a></td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin:10px 0 0"><small>Autobusy odjeżdżają spod hali przylotów, na prawo od wyjścia. Bilet kupicie online (taniej) albo u kierowcy. Kupując online, wybierzcie kurs <strong>min. 45 min po lądowaniu</strong> — zdążycie z odbiorem bagażu.</small></p>
+  </div>
+
+  <div class="card">
+    <h3>Pociągi</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Trasa</th><th>Czas</th><th class="num">Cena / os.</th><th>Częstotliwość</th><th>Bilety</th></tr></thead>
+      <tbody>
+        <tr><td>Milano Centrale → Como S. Giovanni</td><td>40 min</td><td class="num">od 5,20 €</td><td>ok. co godzinę, 6:43–21:43</td>
+          <td><a target="_blank" rel="noopener" href="https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-como-s-giovanni-route/">Trenord</a></td></tr>
+        <tr><td>Milano Centrale → Varenna-Esino</td><td>1 godz.</td><td class="num">7–9 €</td><td>co 1–2 godz.</td>
+          <td><a target="_blank" rel="noopener" href="https://www.trenitalia.com/">Trenitalia</a></td></tr>
+        <tr><td>Milano Centrale → Verona P. Nuova (Regionale Veloce)</td><td>1 godz. 26 min</td><td class="num">ok. 12 €</td><td rowspan="2">ok. 29 poc. dziennie</td>
+          <td><a target="_blank" rel="noopener" href="https://www.trenitalia.com/">Trenitalia</a></td></tr>
+        <tr><td>Milano Centrale → Verona P. Nuova (Frecciarossa / Italo)</td><td>1 godz. 10 min</td><td class="num">od 19,90 €</td>
+          <td><a target="_blank" rel="noopener" href="https://www.italotreno.com/en">Italo</a></td></tr>
+        <tr><td>Milano ⇄ Bergamo</td><td>50 min</td><td class="num">ok. 5,50 €</td><td>co 30 min</td>
+          <td><a target="_blank" rel="noopener" href="https://www.trenord.it/en/">Trenord</a></td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin:10px 0 0"><small><strong>Regionale:</strong> bilet ważny na dowolny pociąg danego dnia, trzeba go skasować/aktywować przed wejściem — kontrola karze 50 €. <strong>Frecciarossa/Italo:</strong> bilet na konkretny pociąg i miejsce, kupujcie z wyprzedzeniem, bo im bliżej terminu, tym drożej.</small></p>
+  </div>
+
+  <div class="card">
+    <h3>Komunikacja miejska</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Miasto</th><th>Bilet</th><th class="num">Cena</th><th>Ważność</th><th>Info</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="4">Mediolan (ATM)</td><td>Pojedynczy miejski</td><td class="num">2,20 €</td><td>90 min, metro + przesiadki</td>
+          <td rowspan="4"><a target="_blank" rel="noopener" href="https://www.atm.it/en">atm.it</a></td></tr>
+        <tr><td><strong>Dobowy 24 h</strong></td><td class="num">7,60 €</td><td>opłaca się od 4 przejazdów</td></tr>
+        <tr><td>3-dniowy</td><td class="num">15,50 €</td><td>72 godz.</td></tr>
+        <tr><td>Karnet 10 przejazdów</td><td class="num">19,50 €</td><td>bez limitu czasu</td></tr>
+        <tr><td>Werona (ATV)</td><td>Autobusy miejskie</td><td class="num">w VeronaCard</td><td>24 h / 48 h</td>
+          <td><a target="_blank" rel="noopener" href="https://turismo.comune.verona.it/nqcontent.cfm?a_id=38678">VeronaCard</a></td></tr>
+        <tr><td>Como</td><td>Funikular Brunate, r/t</td><td class="num">7,20 €</td><td>7 min jazdy, co 15 min</td>
+          <td><a target="_blank" rel="noopener" href="https://www.funicolarecomo.it/inglese/oraricentro.htm">funicolarecomo.it</a></td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin:10px 0 0"><small>W metrze w Mediolanie możecie płacić <strong>zbliżeniowo kartą</strong> na bramce — system sam naliczy najkorzystniejszą stawkę dnia. Przykładajcie tę samą kartę na wejściu i wyjściu.</small></p>
+  </div>
+
+  <div class="card">
+    <h3>Promy na jeziorze Como — Navigazione Laghi</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Trasa</th><th class="num">Zwykły prom</th><th class="num">Wodolot</th><th>Czas</th></tr></thead>
+      <tbody>
+        <tr><td>Como → Bellagio</td><td class="num">12,00 €</td><td class="num">17,00 €</td><td>2 godz. / 45 min</td></tr>
+        <tr><td>Como → Varenna</td><td class="num">13,50 €</td><td class="num">18,00 €</td><td>2 godz. 20 min / 1 godz.</td></tr>
+        <tr><td>Bellagio ⇄ Varenna</td><td class="num">5,50 €</td><td class="num">—</td><td>15–20 min</td></tr>
+        <tr><td><strong>Bilet dzienny — strefa centralna</strong><br><small>Bellagio, Varenna, Menaggio, Cadenabbia</small></td><td class="num" colspan="2">17,50 €</td><td>cały dzień, bez limitu</td></tr>
+        <tr><td><strong>Bilet dzienny Como ⇄ Bellagio</strong></td><td class="num" colspan="2">27,00 €</td><td>cały dzień, bez limitu</td></tr>
+        <tr><td><strong>Bilet dzienny Como ⇄ Varenna</strong></td><td class="num" colspan="2">29,50 €</td><td>cały dzień, bez limitu</td></tr>
+      </tbody>
+    </table></div>
+    <div class="btns">
+      <a class="btn" target="_blank" rel="noopener" href="https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/">Rozkłady i bilety</a>
+      <a class="btn sec" target="_blank" rel="noopener" href="https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/rates-lake-como/">Pełny cennik</a>
+    </div>
+    <p style="margin:12px 0 0"><small><strong>Ważne:</strong> bilety na wodoloty (servizio rapido) sprzedają <u>tylko kasy przy przystaniach</u>, nie kupicie ich online. Od połowy września obowiązuje rozkład jesienny — mniej kursów, ostatnie rejsy wcześniej. Sprawdźcie godzinę ostatniego powrotu <strong>zanim wsiądziecie</strong>.</small></p>
+  </div>
+</div>
+</section>
+
+<!-- ============ BILETY ============ -->
+<section id="bilety">
+<div class="wrap">
+  <h2>Bilety do atrakcji — ceny i rezerwacje</h2>
+
+  <div class="card">
+    <h3>Katedry</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Obiekt</th><th>Bilet</th><th class="num">Cena</th><th>Rezerwacja</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="4"><strong>Duomo di Milano</strong></td><td>Sama katedra + muzeum</td><td class="num">11 €</td>
+          <td rowspan="4"><a target="_blank" rel="noopener" href="https://ticket.duomomilano.it/"><strong>ticket.duomomilano.it</strong></a><br><small>oficjalna kasa online</small></td></tr>
+        <tr><td>Duomo Pass — tarasy schodami</td><td class="num">26 €</td></tr>
+        <tr><td><strong>Duomo Pass — tarasy windą</strong></td><td class="num">32 €</td></tr>
+        <tr><td>Rodzinny (2 dorosłych + dziecko), schody</td><td class="num">45 €</td></tr>
+        <tr><td><strong>Duomo di Como</strong></td><td>Wstęp do katedry</td><td class="num">bezpłatnie</td>
+          <td><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.8117842,9.082634">lokalizacja</a></td></tr>
+        <tr><td><strong>Duomo di Verona</strong></td><td>Zespół katedralny</td><td class="num">w VeronaCard</td>
+          <td><a target="_blank" rel="noopener" href="https://turismo.comune.verona.it/nqcontent.cfm?a_id=38678">VeronaCard</a></td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin:10px 0 0"><small>Duomo Pass jest ważny 72 godziny i obejmuje katedrę, tarasy, muzeum, strefę archeologiczną i kościół San Gottardo. W katedrze obowiązuje strój zakrywający ramiona i kolana — o tej porze roku nie powinno być problemu.</small></p>
+  </div>
+
+  <div class="card">
+    <h3>Mediolan — pozostałe</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Atrakcja</th><th class="num">Cena</th><th>Uwagi</th><th>Bilety</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Ostatnia Wieczerza</strong> (Cenacolo Vinciano)</td><td class="num">15 € + 2 €</td><td>15 min o wyznaczonej godzinie, <strong>rezerwujcie natychmiast</strong></td>
+          <td><a target="_blank" rel="noopener" href="https://cenacolovinciano.vivaticket.it/">vivaticket</a> · <a target="_blank" rel="noopener" href="https://cenacolovinciano.org/en/">info</a></td></tr>
+        <tr><td>Castello Sforzesco — muzea</td><td class="num">5 €</td><td>dziedzińce i park bezpłatnie</td>
+          <td><a target="_blank" rel="noopener" href="https://www.milanocastello.it/">milanocastello.it</a></td></tr>
+        <tr><td>Pinacoteca di Brera</td><td class="num">15 €</td><td>Caravaggio, Rafael, Hayez</td>
+          <td><a target="_blank" rel="noopener" href="https://pinacotecabrera.org/en/">pinacotecabrera.org</a></td></tr>
+        <tr><td>Muzeum Teatro alla Scala</td><td class="num">ok. 12 €</td><td>widok na widownię, jeśli nie ma prób</td>
+          <td><a target="_blank" rel="noopener" href="https://www.teatroallascala.org/en/">teatroallascala.org</a></td></tr>
+        <tr><td>Galleria Vittorio Emanuele II</td><td class="num">bezpłatnie</td><td>taras na dachu osobno, ok. 15 €</td>
+          <td><a target="_blank" rel="noopener" href="https://www.highlinegalleria.com/">Highline Galleria</a></td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h3>Jezioro Como</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Atrakcja</th><th class="num">Cena</th><th>Uwagi</th><th>Bilety</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Villa Carlotta</strong> (Tremezzina)</td><td class="num">17,50 €</td><td>w październiku 10:00–18:00, ostatni bilet 17:00</td>
+          <td><a target="_blank" rel="noopener" href="https://www.villacarlotta.it/en/visit/">villacarlotta.it</a></td></tr>
+        <tr><td><strong>Villa del Balbianello</strong> (Lenno)</td><td class="num">15 € ogród<br>25 € + willa</td><td><strong>zamknięta pon. i śr.</strong>, dojście 25 min pod górę</td>
+          <td><a target="_blank" rel="noopener" href="https://fondoambiente.it/luoghi/villa-del-balbianello/visita">FAI</a></td></tr>
+        <tr><td>Ogrody Villa Melzi (Bellagio)</td><td class="num">ok. 8 €</td><td>tuż przy przystani</td>
+          <td><a target="_blank" rel="noopener" href="https://www.giardinidivillamelzi.it/">villamelzi.it</a></td></tr>
+        <tr><td>Villa Olmo (Como) — park</td><td class="num">bezpłatnie</td><td>wystawy płatne osobno</td>
+          <td><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.818983,9.0653757">mapa</a></td></tr>
+        <tr><td>Villa Bernasconi (Cernobbio)</td><td class="num">10 €</td><td><strong>czynne tylko pt.–pon.</strong> — u Was wypada śr./czw., więc odpada</td>
+          <td><a target="_blank" rel="noopener" href="https://www.villabernasconi.eu/">villabernasconi.eu</a></td></tr>
+        <tr><td>Funikular Como–Brunate</td><td class="num">3,60 € / 7,20 € r/t</td><td>tylko kasa na miejscu, bez online</td>
+          <td><a target="_blank" rel="noopener" href="https://www.funicolarecomo.it/inglese/oraricentro.htm">rozkład</a></td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h3>Werona</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Atrakcja</th><th class="num">Osobno</th><th class="num">VeronaCard</th><th>Bilety</th></tr></thead>
+      <tbody>
+        <tr><td><strong>VeronaCard 24 h</strong></td><td class="num">—</td><td class="num"><strong>20 €</strong></td>
+          <td rowspan="2"><a target="_blank" rel="noopener" href="https://turismo.comune.verona.it/nqcontent.cfm?a_id=38678"><strong>turismo.comune.verona.it</strong></a><br><small>kioski, muzea, punkty info</small></td></tr>
+        <tr><td><strong>VeronaCard 48 h</strong></td><td class="num">—</td><td class="num"><strong>25 €</strong></td></tr>
+        <tr><td>Arena di Verona — zwiedzanie dzienne</td><td class="num">ok. 10 €</td><td class="num">w cenie</td>
+          <td><a target="_blank" rel="noopener" href="https://www.arena.it/">arena.it</a></td></tr>
+        <tr><td>Casa di Giulietta (dom + balkon)</td><td class="num">ok. 12 €</td><td class="num">w cenie</td>
+          <td><a target="_blank" rel="noopener" href="https://casadigiulietta.comune.verona.it/">casadigiulietta</a></td></tr>
+        <tr><td>Torre dei Lamberti</td><td class="num">ok. 6 €</td><td class="num">w cenie</td>
+          <td><a target="_blank" rel="noopener" href="https://www.museiverona.com/">Musei Civici</a></td></tr>
+        <tr><td>Castelvecchio — muzeum</td><td class="num">ok. 9 €</td><td class="num">w cenie</td>
+          <td><a target="_blank" rel="noopener" href="https://www.museiverona.com/">Musei Civici</a></td></tr>
+        <tr><td>Zespół katedralny + Sant'Anastasia + San Zeno</td><td class="num">ok. 8 €</td><td class="num">w cenie</td>
+          <td><a target="_blank" rel="noopener" href="https://www.visitverona.it/en/">visitverona.it</a></td></tr>
+        <tr><td>Autobusy miejskie ATV</td><td class="num">1,50 € / przejazd</td><td class="num">w cenie</td>
+          <td><a target="_blank" rel="noopener" href="https://www.atv.verona.it/">atv.verona.it</a></td></tr>
+        <tr><td>Piazza delle Erbe, Ponte Pietra, Castel San Pietro</td><td class="num" colspan="2">bezpłatnie</td>
+          <td><small>kolejka na Castel San Pietro 2 €</small></td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin:10px 0 0"><small><strong>Rachunek:</strong> Arena + Julia + Lamberti + Castelvecchio osobno to ok. 37 € — VeronaCard za 20 € zwraca się z nawiązką już przy trzech obiektach. Karta liczy 24 godziny od pierwszego użycia, nie od zakupu. <strong>Arena jest zamknięta w poniedziałki</strong> — u Was czwartek, więc jest OK.</small></p>
+  </div>
+</div>
+</section>
+
+<!-- ============ MAPA ============ -->
+<section id="mapa">
+<div class="wrap">
+  <h2>Wasza mapa — „Ania &amp; Daniel – Włochy"</h2>
+  <p>Wszystkie punkty z planu pochodzą z tej mapy. Otwórzcie ją w telefonie przed wyjazdem i pobierzcie okolicę offline w Google Maps.</p>
+
+  <iframe class="map" src="https://www.google.com/maps/d/embed?mid=16DlEpgg6WWKg6rMhO7GcUbvCHU9UJCM" loading="lazy" title="Mapa Ania &amp; Daniel – Włochy"></iframe>
+
+  <div class="btns">
+    <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/d/viewer?mid=16DlEpgg6WWKg6rMhO7GcUbvCHU9UJCM">Otwórz mapę</a>
+    <a class="btn sec" target="_blank" rel="noopener" href="https://www.google.com/maps/d/edit?mid=16DlEpgg6WWKg6rMhO7GcUbvCHU9UJCM&amp;usp=sharing">Edytuj mapę</a>
+  </div>
+
+  <div class="grid g3" style="margin-top:22px">
+    <div class="card">
+      <h4>Przystanie promowe</h4>
+      <ul class="clean">
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.98583,9.25995">Bellagio</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=46.0134,9.28292">Varenna</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=46.01697,9.23689">Menaggio</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.99065,9.23762">Cadenabbia</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Kultowe miejsca</h4>
+      <ul class="clean">
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.9866127,9.2623658">Bellagio — Salita Serbelloni</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.9912845,9.2654879">Bellagio — Punta Spartivento</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.8179375,9.0946552">Brunate — punkt widokowy</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.8117842,9.082634">Como — Piazza del Duomo</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.815375,9.080258">Como — Life Electric</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.8450415,9.0793462">Cernobbio — Villa d'Este</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.8801012,9.1384691">Laglio — willa Clooneya</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.9106803,9.1544772">Nesso — Orrido i Ponte della Civera</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.9710195,9.1962176">Tremezzina — Venus Gulf</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.9670591,9.1863462">Tremezzina — Villa Balbiano</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=46.011868,9.2829034">Varenna — Passeggiata degli Innamorati</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=46.0111464,9.2828646">Varenna — Riva Grande</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Wille i ogrody do zwiedzania</h4>
+      <ul class="clean">
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.982573,9.2563868">Bellagio — Ogrody Villa Melzi</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.9877544,9.262364">Bellagio — Park Villa Serbelloni</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.8375856,9.0730825">Cernobbio — Villa Bernasconi</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.8461467,9.086139">Cernobbio — Villa Pizzo</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=45.818983,9.0653757">Como — Villa Olmo</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=46.1480535,9.3094568">Gravedona — Palazzo Gallio</a></li>
+      </ul>
+      <small>Gravedona leży na północnym krańcu jeziora — na 2-dniowy wyjazd raczej nie zdążycie.</small>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ============ CHECKLIST ============ -->
+<section id="checklist">
+<div class="wrap">
+  <h2>Co zrobić przed wyjazdem</h2>
+
+  <div class="grid g2">
+    <div class="card">
+      <h4>Rezerwujcie od razu</h4>
+      <ul class="clean">
+        <li><strong>Hotel</strong> — najlepsze ceny z bezpłatnym anulowaniem znikają pierwsze</li>
+        <li><strong>Ostatnia Wieczerza</strong> (tylko wariant B) — bilety rozchodzą się na tygodnie naprzód</li>
+        <li><strong>Autobus BGY → Mediolan</strong> w obie strony, zwłaszcza poranny 05:00 w piątek</li>
+        <li><strong>Duomo Pass</strong> na konkretną godzinę (wariant B)</li>
+        <li><strong>Frecciarossa do Werony</strong>, jeśli wybieracie szybki pociąg (wariant C)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Spakujcie i sprawdźcie</h4>
+      <ul class="clean">
+        <li>Dowód lub paszport + <strong>EKUZ</strong> (bezpłatna, NFZ)</li>
+        <li>Wygodne buty — Brunate, Bellagio i Castel San Pietro to sporo schodów</li>
+        <li>Wiatrówka: nad jeziorem rano bywa 10–12 °C, w południe 20–22 °C</li>
+        <li>Karta kredytowa, jeśli bierzecie auto (kaucja 700–1500 €)</li>
+        <li>Powerbank — cały dzień na mapach i biletach w telefonie</li>
+        <li>Zrzuty ekranu biletów offline; we Włoszech zasięg nad jeziorem bywa słaby</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Porównanie kosztów — 2 osoby, bez lotów, hotelu i jedzenia</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Wariant</th><th class="num">Na osobę</th><th class="num">Za 2 osoby</th><th>Charakter</th></tr></thead>
+      <tbody>
+        <tr><td><strong>A — 2 dni nad Como</strong></td><td class="num">86 € · 377 zł</td><td class="num">173 € · 754 zł</td><td>Najtańszy, najspokojniejszy</td></tr>
+        <tr><td><strong>B — Como + Mediolan</strong></td><td class="num">111 € · 485 zł</td><td class="num">222 € · 970 zł</td><td>Najwięcej ikon do odhaczenia</td></tr>
+        <tr><td><strong>C — Como + Werona</strong></td><td class="num">103 € · 449 zł</td><td class="num">206 € · 899 zł</td><td>Najmniej tłoku, najładniejsze miasto</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin:12px 0 0"><small>Doliczcie: hotel 1000–1400 zł za 2 noce, loty wg rezerwacji Ryanair, taksa turystyczna ok. 40 zł, jedzenie 40–55 € / os. dziennie (ok. 900–1200 zł za dwoje) oraz loty wg rezerwacji Ryanair — ok. 700–900 zł za dwoje w dwie strony z bagażem podręcznym. <strong>Pełny koszt wyjazdu dla dwojga wychodzi mniej więcej 3400–4400 zł</strong>, zależnie od wariantu, hotelu i ceny lotów.</small></p>
+  </div>
+</div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Plan przygotowany 18 września 2026 · ceny biletów i rozkłady sprawdzone tego dnia na stronach przewoźników i obiektów.</p>
+    <p style="margin-bottom:0">Kurs walutowy: NBP tabela A z 17.09.2026, 1 EUR = 4,3632 PLN. Ceny hoteli i wypożyczalni zmieniają się codziennie — linki prowadzą do aktualnych wyników z Waszymi datami.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function select(id){
+    tabs.forEach(function(t){
+      var on = t.id===id;
+      t.setAttribute('aria-selected', on?'true':'false');
+      var p=document.getElementById(t.getAttribute('aria-controls'));
+      if(p) p.hidden=!on;
+    });
+    try{ localStorage.setItem('wariant', id); }catch(e){}
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){ select(t.id); });
+  });
+  try{
+    var saved=localStorage.getItem('wariant');
+    if(saved && document.getElementById(saved)) select(saved);
+  }catch(e){}
+
+  var btn=document.getElementById('themeBtn');
+  function apply(v){
+    if(v) document.documentElement.setAttribute('data-theme', v);
+    else document.documentElement.removeAttribute('data-theme');
+  }
+  try{ apply(localStorage.getItem('theme')); }catch(e){}
+  btn.addEventListener('click', function(){
+    var cur=document.documentElement.getAttribute('data-theme');
+    var isDark = cur ? cur==='dark'
+      : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var next = isDark ? 'light' : 'dark';
+    apply(next);
+    try{ localStorage.setItem('theme', next); }catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
