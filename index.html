@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Como · Mediolan · Werona — 30.09–02.10.2026</title>
-<meta name="description" content="Plan wycieczki Ania &amp; Daniel: 6 wariantów (Como, Mediolan, Werona, Bergamo), ceny, bilety i rezerwacje z aktywnymi linkami.">
+<meta name="description" content="Plan wycieczki Ania &amp; Daniel: 8 wariantów (Como, Mediolan, Werona, Bergamo, Lecco), ceny, bilety i rezerwacje z aktywnymi linkami.">
 <style>
 :root{
   --bg:#f6f4ef; --bg2:#fffdf8; --card:#ffffff; --ink:#15221f; --ink2:#4d5f5a;
@@ -111,6 +111,27 @@ section:last-of-type{border-bottom:0}
 .tab .t-lab{font-size:11.5px; font-weight:800; letter-spacing:.1em; color:var(--accent2); display:block}
 .tab .t-name{font-weight:700; font-size:15.5px; display:block; margin-top:2px}
 .tab .t-sum{font-size:12.5px; color:var(--ink2); display:block}
+.tab.hot{border-color:var(--accent2); border-width:2px; background:var(--warn-bg)}
+.tab.hot[aria-selected="true"]{box-shadow:0 0 0 3px rgba(194,106,45,.18),var(--shadow)}
+.tab .t-tag{
+  display:inline-block; font-size:10px; font-weight:800; letter-spacing:.1em;
+  background:var(--accent2); color:#fff; padding:2px 8px; border-radius:999px; margin-bottom:5px;
+}
+.pick{
+  background:var(--warn-bg); border:2px solid var(--accent2); border-radius:var(--radius);
+  padding:20px; box-shadow:var(--shadow); margin-bottom:16px;
+}
+.pick > h3{margin-top:0}
+.pick .pick-lab{
+  display:inline-block; font-size:11px; font-weight:800; letter-spacing:.1em;
+  background:var(--accent2); color:#fff; padding:3px 10px; border-radius:999px; margin-bottom:10px;
+}
+.route{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin:14px 0 2px; font-size:14px}
+.route span{
+  background:var(--card); border:1px solid var(--line); border-radius:9px;
+  padding:5px 10px; font-weight:700; white-space:nowrap;
+}
+.route i{font-style:normal; color:var(--accent2); font-weight:800}
 .panel[hidden]{display:none}
 
 /* TIMELINE */
@@ -184,7 +205,7 @@ footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
 <header class="hero">
   <div class="wrap">
     <h1>Como · Mediolan · Werona</h1>
-    <p class="sub">Ania &amp; Daniel — 30 września – 2 października 2026 · 2 noce · 6 wariantów do wyboru</p>
+    <p class="sub">Ania &amp; Daniel — 30 września – 2 października 2026 · 2 noce · 8 wariantów do wyboru</p>
     <div class="badges">
       <span class="badge">WRO ⇄ BGY · Ryanair</span>
       <span class="badge">2 osoby · 1 pokój</span>
@@ -198,7 +219,7 @@ footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
 <nav class="top">
   <div class="wrap">
     <a href="#loty">Loty</a>
-    <a href="#warianty">6 wariantów</a>
+    <a href="#warianty">8 wariantów</a>
     <a href="#hotele">Hotele</a>
     <a href="#auta">Auta</a>
     <a href="#transport">Transport</a>
@@ -257,11 +278,23 @@ footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
 <!-- ============ WARIANTY ============ -->
 <section id="warianty">
 <div class="wrap">
-  <h2>Sześć wariantów — wybierzcie jeden</h2>
-  <p style="max-width:70ch">Każdy wariant to te same 2 pełne dni zwiedzania (środa + czwartek) i ten sam lot. Różni je to, co zwiedzacie — <strong>i gdzie śpicie</strong>. Baza w Mediolanie: warianty B i C. Nad jeziorem, w Como: wariant A. W Bergamo, 15 minut od lotniska: warianty D i E. Wariant F dzieli pobyt — noc w Como, noc w Bergamo.</p>
+  <h2>Osiem wariantów — wybierzcie jeden</h2>
+  <p style="max-width:70ch">Każdy wariant to te same 2 pełne dni zwiedzania (środa + czwartek) i ten sam lot. Różni je to, co zwiedzacie — <strong>i gdzie śpicie</strong>. <strong>Zacznijcie od wariantów G i H</strong>, oznaczonych na pomarańczowo: przechodzą przez trzy miasta bez zawracania i kończą ostatnią noc 15 minut od lotniska. Dalej: baza w Mediolanie (B, C), w Como (A), w Bergamo (D, E) albo podzielona między Como i Bergamo (F).</p>
 
   <div class="tabs" role="tablist">
-    <button class="tab" role="tab" id="tab-a" aria-controls="p-a" aria-selected="true">
+    <button class="tab hot" role="tab" id="tab-g" aria-controls="p-g" aria-selected="true">
+      <span class="t-tag">POLECANE</span>
+      <span class="t-lab">Wariant G</span>
+      <span class="t-name">Como → Mediolan → Bergamo</span>
+      <span class="t-sum">Noc nad jeziorem, noc przy lotnisku</span>
+    </button>
+    <button class="tab hot" role="tab" id="tab-h" aria-controls="p-h" aria-selected="false">
+      <span class="t-tag">POLECANE</span>
+      <span class="t-lab">Wariant H</span>
+      <span class="t-name">Lecco → Como → Mediolan → Bergamo</span>
+      <span class="t-sum">To samo co G plus Lecco po drodze</span>
+    </button>
+    <button class="tab" role="tab" id="tab-a" aria-controls="p-a" aria-selected="false">
       <span class="t-lab">Wariant A</span>
       <span class="t-name">2 dni nad Como</span>
       <span class="t-sum">Nocleg w Como · miasto, Brunate i środek jeziora</span>
@@ -294,7 +327,7 @@ footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
   </div>
 
   <!-- ---------- WARIANT A ---------- -->
-  <div class="panel" id="p-a" role="tabpanel" aria-labelledby="tab-a">
+  <div class="panel" id="p-a" role="tabpanel" aria-labelledby="tab-a" hidden>
     <div class="card">
       <h3 style="margin-top:0">Wariant A — dwa dni nad jeziorem Como</h3>
       <p>Najspokojniejszy wariant i ten, który wykorzystuje niemal wszystkie punkty z Waszej mapy. Dzień 1 to miasto Como i taras widokowy w Brunate, dzień 2 — środkowa część jeziora promami: Varenna, Bellagio, Tremezzina.</p>
@@ -466,6 +499,388 @@ footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
       </table></div>
       <small>Nocleg w Como wyrzuca z rachunku wszystkie pociągi do Mediolanu i bilety ATM — wychodzi 78 € zamiast 86 € na osobę, mimo droższego biletu na promy. Katedra w Como, Life Electric, Punta Spartivento, Passeggiata degli Innamorati i parki nad jeziorem — bezpłatnie. Kwoty w złotych zaokrąglone do pełnych złotówek, sumy przeliczone z kwoty w euro.
       <br>Jeśli ostatnią noc przespicie w Bergamo, zamiast autobusu Como → BGY doliczcie pociągi Como → Mediolan → Bergamo (ok. 10,70 €) i autobus ATB na lotnisko (2,80 €) — ok. 1,50 € / os. więcej.</small>
+    </div>
+  </div>
+
+  <!-- ---------- WARIANT G ---------- -->
+  <div class="panel" id="p-g" role="tabpanel" aria-labelledby="tab-g">
+    <div class="pick">
+      <span class="pick-lab">POLECANE</span>
+      <h3>Wariant G — Como, Mediolan i Bergamo, każde w swoim czasie</h3>
+      <div class="route">
+        <span>🛬 BGY 08:25</span><i>→</i><span>Como · nocleg</span><i>→</i><span>Mediolan · cały dzień</span><i>→</i><span>Bergamo · kolacja i nocleg</span><i>→</i><span>🛫 08:40</span>
+      </div>
+      <p>Trasa układa się w linii prostej z zachodu na wschód i <strong>nigdzie nie wracacie po własnych śladach</strong>. Każdą noc śpicie tam, gdzie skończyliście dzień, a ostatnią — 15 minut od lotniska, więc piątkowa pobudka to 06:15, a nie 04:00. Trzy zupełnie różne miasta w dwa dni: jezioro, metropolia i średniowieczne miasto na wzgórzu.</p>
+      <p style="margin-bottom:0"><strong>Koszt:</strong> 88,29 € / os. (385 zł) za bilety i wstępy, plus ok. 747 zł za oba noclegi dla dwojga — czyli mniej, niż kosztują dwie noce w jednym hotelu w centrum Como.</p>
+    </div>
+
+    <div class="card" id="nocleg-gh">
+      <h3 style="margin-top:0">Noclegi — dwie pojedyncze noce</h3>
+      <p>Ten wariant nie ma jednej bazy: <strong>noc 1 w Como, noc 2 w Bergamo</strong>. Rezerwujecie dwa osobne obiekty, każdy na jedną noc. Poniżej realne oferty na te konkretne daty — ceny i oceny sprawdzone na Booking.com <strong>23.09.2026</strong>, a linki otwierają od razu stronę obiektu z wpisaną jedną nocą.</p>
+
+      <div class="note ok">
+        <strong>Dwie pojedyncze noce wychodzą taniej niż jedna baza na dwie noce</strong>
+        Najtańsze sensowne połączenie to ok. <strong>419 zł w Como + 328 zł w Bergamo = 747 zł</strong> za oba noclegi. Dla porównania dwie noce w jednym miejscu: Como od 874 zł, Bergamo od 622 zł, a hotel w centrum Como to 1 769 zł. Do tego każdą noc śpicie dokładnie tam, gdzie kończycie dzień — zero dojazdów z powrotem do bazy.
+      </div>
+
+      <h4 style="margin-bottom:6px">Noc 1 · środa 30.09 → czwartek 01.10 · <strong>Como</strong></h4>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Obiekt</th><th>Od centrum</th><th class="num">Ocena</th><th class="num">1 noc / 2 os.</th><th></th></tr></thead>
+        <tbody>
+          <tr><td><strong>Casa Vacanze Como Lago</strong><br><small>apartament</small></td><td>1,1 km</td><td class="num">8,1</td><td class="num">419 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/casa-vacanze-como-lago.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Eremo di San Donato</strong><br><small>apartament w dawnym klasztorze</small></td><td>1 km</td><td class="num">9,1</td><td class="num">472 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/unique-house-in-the-ancient-monastery-of-eremo-di-san-donato.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>B&amp;B Hotel Como Baradello</strong><br><small>hotel</small></td><td>2,1 km</td><td class="num">8,3</td><td class="num">472 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/b-amp-b-como-baradello.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Victoria Royal Garden</strong><br><small>pokoje</small></td><td>0,6 km</td><td class="num">7,5</td><td class="num">480 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/victoria-royal-garden-holiday-home.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Hotel Rossovino Como</strong><br><small>hotel</small></td><td>2,4 km</td><td class="num">7,9</td><td class="num">491 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/residence-rossovino.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>B&amp;B Hotel Como Camerlata</strong><br><small>hotel</small></td><td>2,4 km</td><td class="num">8,1</td><td class="num">519 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/b-amp-b-como.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Hotel Il Loggiato Dei Serviti</strong><br><small>hotel</small></td><td>0,8 km</td><td class="num">7,7</td><td class="num">587 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/il-loggiato-dei-serviti.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Le Stanze del Lago</strong><br><small>apartamenty</small></td><td>500 m</td><td class="num">8,2</td><td class="num">628 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/le-stanze-del-lago.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+        </tbody>
+      </table></div>
+      <div class="btns" style="margin-top:10px">
+        <a class="btn" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Como%2C+Lombardia%2C+W%C5%82ochy&checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price">Como 30.09–01.10 — wszystkie</a>
+        <a class="btn sec" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Como%2C+Lombardia%2C+W%C5%82ochy&checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price&nflt=ht_id%3D204">Como — same hotele</a>
+      </div>
+
+      <h4 style="margin:22px 0 6px">Noc 2 · czwartek 01.10 → piątek 02.10 · <strong>Bergamo</strong></h4>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Obiekt</th><th>Od centrum</th><th class="num">Ocena</th><th class="num">1 noc / 2 os.</th><th></th></tr></thead>
+        <tbody>
+          <tr><td><strong>VILLA GIOVANNA</strong><br><small>pokoje</small></td><td>2,6 km</td><td class="num">7,2</td><td class="num">256 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/villa-giovanna-bergamo.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Bergamoinhouse airport</strong><br><small>pokoje</small></td><td>1,3 km</td><td class="num">7,1</td><td class="num">305 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/bergamoinhouse.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>BERGAMO AIRPORT ROOMS</strong><br><small>pokoje, self check-in</small></td><td>1,6 km</td><td class="num">7,8</td><td class="num">319 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/bergamo-airport-rooms-self-check-in.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Bergamo City</strong><br><small>pokoje, self check-in</small></td><td>1,2 km</td><td class="num">7,5</td><td class="num">324 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/bergamo-relax-b-amp-b-self-check-in.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>BnBg — San Bernardino</strong><br><small>pokoje</small></td><td>0,6 km</td><td class="num">7,7</td><td class="num">328 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/bnbg-san-bernardino.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Casa Mafalda</strong><br><small>pokój we wspólnym mieszkaniu</small></td><td>1,6 km</td><td class="num">8,4</td><td class="num">333 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/casa-mafalda-bergamo.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Bergamo Automatic Rooms</strong><br><small>pokoje, self check-in</small></td><td>0,6 km</td><td class="num">7,7</td><td class="num">347 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/bergamo-automatic-rooms.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Bergamo Center Rooms</strong><br><small>pokoje</small></td><td>200 m</td><td class="num">7,8</td><td class="num">370 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/bergamo-city-center-rooms.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+        </tbody>
+      </table></div>
+      <div class="btns" style="margin-top:10px">
+        <a class="btn" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Bergamo%2C+Lombardia%2C+W%C5%82ochy&checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price">Bergamo 01.10–02.10 — wszystkie</a>
+        <a class="btn sec" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Bergamo%2C+Lombardia%2C+W%C5%82ochy&checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price&nflt=ht_id%3D204">Bergamo — same hotele</a>
+      </div>
+      <p style="margin:12px 0 0"><small>W Bergamo na jedną noc królują pokoje i apartamenty z <em>self check-in</em> — przy przyjeździe ok. 20:15 i wyjeździe o 06:15 to zaleta, bo nie zależycie od godzin recepcji. <strong>Sprawdźcie to przed rezerwacją:</strong> czy obiekt wpuszcza po 20:00 i czy da się wyjść przed 07:00. Ceny orientacyjne — Booking zmienia je codziennie.</small></p>
+    </div>
+
+    <div class="day">
+      <h3>Dzień 1 · środa 30.09 — prosto nad jezioro</h3>
+      <p class="dmeta">Lądowanie → autobus do Como → miasto, funikular, zachód słońca</p>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:25</span><span class="st-t">Lądowanie BGY, autobus prosto do Como</span></div>
+      <p><a href="https://www.flibco.com/en/shuttle/bus-bergamo-milan-airport-como" target="_blank" rel="noopener">flibco</a> spod terminalu do Como San Giovanni — 1 godz. 45 min, od <strong>11,99 €</strong>. Kupcie online i wybierzcie kurs min. 45 min po lądowaniu.<br><small>Gdyby nie było dogodnego kursu: Terravision do Milano Centrale (5 €, 50 min) i Trenord do Como (40 min, od 5,20 €) — podobny czas, podobna cena.</small></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:30</span><span class="st-t">Como — bagaże do hotelu</span></div>
+      <p>Obiekt przyjmie walizki przed zameldowaniem. Ze stacji do centrum 10 minut pieszo, cały czas w dół.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">11:10</span><span class="st-t">Katedra i Piazza del Duomo</span></div>
+      <p>Gotyk przechodzący w renesans, wstęp <strong>bezpłatny</strong>. Obok Broletto i Teatro Sociale.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8117842,9.082634" target="_blank" rel="noopener">mapa</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">12:00</span><span class="st-t">Lungolago i Life Electric</span></div>
+      <p>Spacer nabrzeżem do stalowej rzeźby Libeskinda na cyplu — pomnik Alessandro Volty.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.815375,9.080258" target="_blank" rel="noopener">mapa</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">13:00</span><span class="st-t">Obiad w centrum Como</span></div>
+      <p>Okolice Piazza San Fedele — taniej i mniej turystycznie niż przy samej wodzie. Budżet 18–25 € / os.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">14:30</span><span class="st-t">Funikular Como → Brunate</span></div>
+      <p>7 minut w górę, <strong>7,20 € w dwie strony</strong>. Z tarasu widok na całe ramię jeziora, dalej 30 minut pieszo do latarni Faro Voltiano.
+      <a class="pin" href="https://www.funicolarecomo.it/inglese/oraricentro.htm" target="_blank" rel="noopener">rozkład</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">17:00</span><span class="st-t">Villa Olmo i zachód słońca</span></div>
+      <p>Neoklasycystyczna willa z parkiem schodzącym do wody, park bezpłatny. Zachód słońca 30 września wypada ok. 19:05.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.818983,9.0653757" target="_blank" rel="noopener">mapa</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">19:30</span><span class="st-t">Kolacja nad jeziorem i nocleg w Como</span></div>
+      <p>Okolice Piazza Cavour albo uliczki za katedrą, potem spacer po oświetlonym lungolago. Rezerwujecie <strong>jedną noc</strong>: 30.09 → 01.10.</p></div>
+
+    </div>
+
+    <div class="day">
+      <h3>Dzień 2 · czwartek 01.10 — Mediolan od rana do wieczora</h3>
+      <p class="dmeta">Wymeldowanie w Como → cały dzień w Mediolanie → wieczorem pociąg do Bergamo</p>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:00</span><span class="st-t">Wymeldowanie w Como</span></div>
+      <p>Bagaże bierzecie ze sobą — dziś nie wracacie już nad jezioro.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:40</span><span class="st-t">Pociąg Como San Giovanni → Milano Centrale</span></div>
+      <p>40 minut, od <strong>5,20 €</strong> / os., kursy mniej więcej co godzinę. <a href="https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-como-s-giovanni-route/" target="_blank" rel="noopener">Trenord</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">09:30</span><span class="st-t">Bagaże do przechowalni na Milano Centrale</span></div>
+      <p>KiPoint na dworcu — ok. 6 € za sztukę za 5 godzin, przy całym dniu wychodzi ok. 8 €. Wieczorem i tak wracacie na ten sam dworzec po pociąg do Bergamo, więc bagaże są po drodze.<br><small>Jeśli lecicie tylko z bagażem podręcznym, możecie go nosić przez dzień i ominąć ten koszt.</small></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:00</span><span class="st-t">Duomo — katedra i tarasy</span></div>
+      <p>Jedyny punkt, który trzeba kupić z wyprzedzeniem. <strong>Duomo Pass windą 32 €</strong> (schodami 26 €, sama katedra 11 €). Na tarasach chodzi się między iglicami.
+      <a class="pin" href="https://ticket.duomomilano.it/" target="_blank" rel="noopener">bilety</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">12:00</span><span class="st-t">Galleria Vittorio Emanuele II i La Scala</span></div>
+      <p>Szklana galeria z 1877 roku, a tuż za nią Piazza della Scala. Galleria bezpłatnie, muzeum teatru ok. 12 €, jeśli akurat nie ma prób.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">13:00</span><span class="st-t">Obiad poza ścisłym centrum</span></div>
+      <p>Brera albo Porta Venezia — sto metrów od Duomo ceny są turystyczne. Budżet 20–28 € / os.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">14:30</span><span class="st-t">Castello Sforzesco i Parco Sempione</span></div>
+      <p>Dziedzińce i park <strong>bezpłatnie</strong>, muzea 5 € — jest tam <em>Pietà Rondanini</em>, ostatnia, nieukończona rzeźba Michała Anioła.
+      <a class="pin" href="https://www.milanocastello.it/" target="_blank" rel="noopener">milanocastello.it</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">16:30</span><span class="st-t">Brera albo Navigli — do wyboru</span></div>
+      <p><strong>Brera</strong>: wąskie uliczki i Pinacoteca (15 €, Caravaggio i Hayez). <strong>Navigli</strong>: kanały Leonarda, ładniejsze późnym popołudniem.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">18:45</span><span class="st-t">Powrót na Centrale po bagaże</span></div>
+      <p>Metrem M2 albo M3, kilkanaście minut. Dobowy bilet ATM kosztuje 7,60 € i opłaca się już przy czterech przejazdach.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">19:10</span><span class="st-t">Pociąg Milano Centrale → Bergamo</span></div>
+      <p>50 minut, ok. <strong>5,50 €</strong> / os., kursy co pół godziny. <a href="https://www.trenord.it/en/" target="_blank" rel="noopener">Trenord</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">20:15</span><span class="st-t">Bergamo — zameldowanie i kolacja</span></div>
+      <p>Obiekty są 5–10 minut od dworca. Na kolację warto wjechać funikularem na Città Alta: Piazza Vecchia wieczorem jest pusta i podświetlona, a o <strong>22:00 Campanone bije 100 razy</strong>, dawnym sygnałem zamknięcia bram miasta.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.7036,9.6627" target="_blank" rel="noopener">Piazza Vecchia</a></p></div>
+
+    </div>
+
+    <div class="day">
+      <h3>Dzień 3 · piątek 02.10 — powrót bez pośpiechu</h3>
+      <p class="dmeta">15 minut z centrum na lotnisko · wylot 08:40</p>
+
+      <div class="stop"><div class="st-h"><span class="hr">06:15</span><span class="st-t">Autobus na lotnisko</span></div>
+      <p>Linia 1 <a href="https://www.atb.bergamo.it/" target="_blank" rel="noopener">ATB</a> z dworca Bergamo na BGY — <strong>15 minut</strong>, ok. 2,80 € / os., kursy co 20 minut. Dla porównania: z Como trzeba by ruszyć ok. 04:45, z Mediolanu ok. 05:15.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">06:45</span><span class="st-t">Na lotnisku</span></div>
+      <p>Zgodnie z zaleceniem, 1 godz. 55 min przed odlotem. To jedyna rzecz, którą ten wariant załatwia lepiej niż wszystkie oparte na jednej bazie w Como albo Mediolanie.</p></div>
+
+    </div>
+
+    <div class="card">
+      <h3>Koszt wariantu G — na osobę, bez lotu, hotelu i jedzenia</h3>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Pozycja</th><th class="num">EUR</th><th class="num">PLN</th></tr></thead>
+        <tbody>
+          <tr><td>Autobus BGY → Como (flibco, bezpośrednio)</td><td class="num">11,99</td><td class="num">52</td></tr>
+          <tr><td>Funikular Como–Brunate</td><td class="num">7,20</td><td class="num">31</td></tr>
+          <tr><td>Pociąg Como → Milano Centrale</td><td class="num">5,20</td><td class="num">23</td></tr>
+          <tr><td>Przechowalnia bagażu na Centrale (cały dzień)</td><td class="num">8,00</td><td class="num">35</td></tr>
+          <tr><td>Duomo Pass windą</td><td class="num">32,00</td><td class="num">140</td></tr>
+          <tr><td>Castello Sforzesco — muzea</td><td class="num">5,00</td><td class="num">22</td></tr>
+          <tr><td>Dobowy ATM w Mediolanie</td><td class="num">7,60</td><td class="num">33</td></tr>
+          <tr><td>Pociąg Milano Centrale → Bergamo</td><td class="num">5,50</td><td class="num">24</td></tr>
+          <tr><td>Bilety miejskie ATB w Bergamo (funikular, wieczór)</td><td class="num">3,00</td><td class="num">13</td></tr>
+          <tr><td>Autobus ATB Bergamo → BGY</td><td class="num">2,80</td><td class="num">12</td></tr>
+          <tr class="total"><td>Razem / osoba</td><td class="num">88,29</td><td class="num">385 zł</td></tr>
+          <tr class="total"><td>Razem za 2 osoby</td><td class="num">176,58</td><td class="num">770 zł</td></tr>
+        </tbody>
+      </table></div>
+      <small>Najdroższa pozycja to Duomo Pass — bez wjazdu na tarasy wariant spada do 56 € / os. Katedra w Como, Life Electric, park Villa Olmo, Galleria, dziedzińce Castello, Piazza Vecchia i mury weneckie w Bergamo — bezpłatnie. Przechowalnia bagażu i bilety ATB to szacunki (cennik: <a href="https://www.atb.bergamo.it/" target="_blank" rel="noopener">atb.bergamo.it</a>). Kwoty w złotych zaokrąglone, sumy przeliczone z euro.</small>
+    </div>
+  </div>
+
+  <!-- ---------- WARIANT H ---------- -->
+  <div class="panel" id="p-h" role="tabpanel" aria-labelledby="tab-h" hidden>
+    <div class="pick">
+      <span class="pick-lab">POLECANE</span>
+      <h3>Wariant H — to samo co G, ale z Lecco po drodze</h3>
+      <div class="route">
+        <span>🛬 BGY 08:25</span><i>→</i><span>Lecco · przedpołudnie</span><i>→</i><span>Como · nocleg</span><i>→</i><span>Mediolan · cały dzień</span><i>→</i><span>Bergamo · kolacja i nocleg</span><i>→</i><span>🛫 08:40</span>
+      </div>
+      <p>Zamiast autobusu prosto do Como jedziecie pociągiem przez <strong>Lecco</strong> — drugie miasto nad jeziorem, na końcu wschodniego ramienia, pod ścianą Resegone. Geograficznie wychodzi po drodze: Bergamo, Lecco i Como leżą niemal na jednej linii, połączone dwiema liniami kolejowymi.</p>
+      <p style="margin-bottom:0"><strong>Koszt niemal identyczny z G</strong> — 89,10 € zamiast 88,29 € / os. Różnica jest w czasie: do Como docieracie ok. 15:00, więc odpada Villa Olmo i spokojne popołudnie nad wodą. Dzień 2 i 3 bez zmian.</p>
+    </div>
+
+    <div class="card" id="nocleg-gh-h">
+      <h3 style="margin-top:0">Noclegi — dwie pojedyncze noce</h3>
+      <p>Ten wariant nie ma jednej bazy: <strong>noc 1 w Como, noc 2 w Bergamo</strong>. Rezerwujecie dwa osobne obiekty, każdy na jedną noc. Poniżej realne oferty na te konkretne daty — ceny i oceny sprawdzone na Booking.com <strong>23.09.2026</strong>, a linki otwierają od razu stronę obiektu z wpisaną jedną nocą.</p>
+
+      <div class="note ok">
+        <strong>Dwie pojedyncze noce wychodzą taniej niż jedna baza na dwie noce</strong>
+        Najtańsze sensowne połączenie to ok. <strong>419 zł w Como + 328 zł w Bergamo = 747 zł</strong> za oba noclegi. Dla porównania dwie noce w jednym miejscu: Como od 874 zł, Bergamo od 622 zł, a hotel w centrum Como to 1 769 zł. Do tego każdą noc śpicie dokładnie tam, gdzie kończycie dzień — zero dojazdów z powrotem do bazy.
+      </div>
+
+      <h4 style="margin-bottom:6px">Noc 1 · środa 30.09 → czwartek 01.10 · <strong>Como</strong></h4>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Obiekt</th><th>Od centrum</th><th class="num">Ocena</th><th class="num">1 noc / 2 os.</th><th></th></tr></thead>
+        <tbody>
+          <tr><td><strong>Casa Vacanze Como Lago</strong><br><small>apartament</small></td><td>1,1 km</td><td class="num">8,1</td><td class="num">419 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/casa-vacanze-como-lago.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Eremo di San Donato</strong><br><small>apartament w dawnym klasztorze</small></td><td>1 km</td><td class="num">9,1</td><td class="num">472 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/unique-house-in-the-ancient-monastery-of-eremo-di-san-donato.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>B&amp;B Hotel Como Baradello</strong><br><small>hotel</small></td><td>2,1 km</td><td class="num">8,3</td><td class="num">472 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/b-amp-b-como-baradello.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Victoria Royal Garden</strong><br><small>pokoje</small></td><td>0,6 km</td><td class="num">7,5</td><td class="num">480 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/victoria-royal-garden-holiday-home.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Hotel Rossovino Como</strong><br><small>hotel</small></td><td>2,4 km</td><td class="num">7,9</td><td class="num">491 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/residence-rossovino.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>B&amp;B Hotel Como Camerlata</strong><br><small>hotel</small></td><td>2,4 km</td><td class="num">8,1</td><td class="num">519 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/b-amp-b-como.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Hotel Il Loggiato Dei Serviti</strong><br><small>hotel</small></td><td>0,8 km</td><td class="num">7,7</td><td class="num">587 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/il-loggiato-dei-serviti.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Le Stanze del Lago</strong><br><small>apartamenty</small></td><td>500 m</td><td class="num">8,2</td><td class="num">628 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/le-stanze-del-lago.pl.html?checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+        </tbody>
+      </table></div>
+      <div class="btns" style="margin-top:10px">
+        <a class="btn" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Como%2C+Lombardia%2C+W%C5%82ochy&checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price">Como 30.09–01.10 — wszystkie</a>
+        <a class="btn sec" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Como%2C+Lombardia%2C+W%C5%82ochy&checkin=2026-09-30&checkout=2026-10-01&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price&nflt=ht_id%3D204">Como — same hotele</a>
+      </div>
+
+      <h4 style="margin:22px 0 6px">Noc 2 · czwartek 01.10 → piątek 02.10 · <strong>Bergamo</strong></h4>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Obiekt</th><th>Od centrum</th><th class="num">Ocena</th><th class="num">1 noc / 2 os.</th><th></th></tr></thead>
+        <tbody>
+          <tr><td><strong>VILLA GIOVANNA</strong><br><small>pokoje</small></td><td>2,6 km</td><td class="num">7,2</td><td class="num">256 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/villa-giovanna-bergamo.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Bergamoinhouse airport</strong><br><small>pokoje</small></td><td>1,3 km</td><td class="num">7,1</td><td class="num">305 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/bergamoinhouse.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>BERGAMO AIRPORT ROOMS</strong><br><small>pokoje, self check-in</small></td><td>1,6 km</td><td class="num">7,8</td><td class="num">319 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/bergamo-airport-rooms-self-check-in.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Bergamo City</strong><br><small>pokoje, self check-in</small></td><td>1,2 km</td><td class="num">7,5</td><td class="num">324 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/bergamo-relax-b-amp-b-self-check-in.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>BnBg — San Bernardino</strong><br><small>pokoje</small></td><td>0,6 km</td><td class="num">7,7</td><td class="num">328 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/bnbg-san-bernardino.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Casa Mafalda</strong><br><small>pokój we wspólnym mieszkaniu</small></td><td>1,6 km</td><td class="num">8,4</td><td class="num">333 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/casa-mafalda-bergamo.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Bergamo Automatic Rooms</strong><br><small>pokoje, self check-in</small></td><td>0,6 km</td><td class="num">7,7</td><td class="num">347 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/bergamo-automatic-rooms.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+          <tr><td><strong>Bergamo Center Rooms</strong><br><small>pokoje</small></td><td>200 m</td><td class="num">7,8</td><td class="num">370 zł</td>
+            <td><a target="_blank" rel="noopener" href="https://www.booking.com/hotel/it/bergamo-city-center-rooms.pl.html?checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN">oferta →</a></td></tr>
+        </tbody>
+      </table></div>
+      <div class="btns" style="margin-top:10px">
+        <a class="btn" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Bergamo%2C+Lombardia%2C+W%C5%82ochy&checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price">Bergamo 01.10–02.10 — wszystkie</a>
+        <a class="btn sec" target="_blank" rel="noopener" href="https://www.booking.com/searchresults.pl.html?ss=Bergamo%2C+Lombardia%2C+W%C5%82ochy&checkin=2026-10-01&checkout=2026-10-02&group_adults=2&no_rooms=1&group_children=0&selected_currency=PLN&order=price&nflt=ht_id%3D204">Bergamo — same hotele</a>
+      </div>
+      <p style="margin:12px 0 0"><small>W Bergamo na jedną noc królują pokoje i apartamenty z <em>self check-in</em> — przy przyjeździe ok. 20:15 i wyjeździe o 06:15 to zaleta, bo nie zależycie od godzin recepcji. <strong>Sprawdźcie to przed rezerwacją:</strong> czy obiekt wpuszcza po 20:00 i czy da się wyjść przed 07:00. Ceny orientacyjne — Booking zmienia je codziennie.</small></p>
+    </div>
+
+    <div class="day">
+      <h3>Dzień 1 · środa 30.09 — Lecco po drodze, potem Como</h3>
+      <p class="dmeta">Lądowanie → pociągiem przez Lecco → wieczór i nocleg w Como</p>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:25</span><span class="st-t">Lądowanie BGY, autobus na dworzec Bergamo</span></div>
+      <p>Linia 1 <a href="https://www.atb.bergamo.it/" target="_blank" rel="noopener">ATB</a> spod terminalu — <strong>15 minut</strong>, ok. 2,80 € / os. Zamiast jechać autobusem prosto do Como, przesiadacie się na pociąg.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">09:15</span><span class="st-t">Pociąg Bergamo → Lecco</span></div>
+      <p>Linia Lecco–Bergamo, <strong>ok. 40 minut</strong>, ok. 5 € / os. Jedzie doliną Adda, ostatni odcinek wzdłuż wody. <a href="https://www.trenord.it/en/" target="_blank" rel="noopener">Trenord</a><br><small>Godziny i dokładną cenę sprawdźcie w wyszukiwarce Trenord — linia kursuje na stałe, ale rozkład zmienia się sezonowo.</small></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:00</span><span class="st-t">Lecco — miasto Manzoniego</span></div>
+      <p>Dworzec jest 10 minut od nabrzeża. Nad miastem stoją <strong>Grigne i Resegone</strong> — ta poszarpana grań z okładek przewodników po Lombardii. To tu Alessandro Manzoni umieścił <em>Narzeczonych</em>, najważniejszą włoską powieść XIX wieku.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8566,9.3931" target="_blank" rel="noopener">lungolago</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:30</span><span class="st-t">Lungolago, Ponte Azzone Visconti i Piazza XX Settembre</span></div>
+      <p>Most z XIV wieku, promenada z widokiem na góry po drugiej stronie wody i plac ze starą wieżą. Wszystko <strong>bezpłatnie</strong>, spokojnym krokiem 1,5 godziny.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8531,9.3906" target="_blank" rel="noopener">Ponte Visconti</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">12:30</span><span class="st-t">Obiad w Lecco</span></div>
+      <p>Zdecydowanie taniej niż w Como czy Bellagio — Lecco żyje z własnych mieszkańców, nie z turystów. Budżet 15–22 € / os.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">14:00</span><span class="st-t">Pociąg Lecco → Como</span></div>
+      <p>Linia Como–Lecco przez Molteno, <strong>ok. 40–50 minut</strong>, ok. 5 € / os. Pociąg dojeżdża do stacji Como Borghi albo Como Lago — obie są bliżej centrum niż San Giovanni.<br><small>Tu też warto rano sprawdzić rozkład: na tej linii kursy bywają co godzinę lub rzadziej.</small></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">15:00</span><span class="st-t">Como — katedra i lungolago</span></div>
+      <p>Katedra bezpłatnie, potem nabrzeżem do Life Electric.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8117842,9.082634" target="_blank" rel="noopener">katedra</a>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.815375,9.080258" target="_blank" rel="noopener">Life Electric</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">16:30</span><span class="st-t">Funikular Como → Brunate na zachód słońca</span></div>
+      <p>7 minut w górę, <strong>7,20 € w dwie strony</strong>. O tej porze światło jest najlepsze — zachód 30 września wypada ok. 19:05.
+      <a class="pin" href="https://www.funicolarecomo.it/inglese/oraricentro.htm" target="_blank" rel="noopener">rozkład</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">19:30</span><span class="st-t">Kolacja i nocleg w Como</span></div>
+      <p>Rezerwujecie <strong>jedną noc</strong>: 30.09 → 01.10. Odpada Villa Olmo, którą w wariancie G zwiedzacie po południu — to cena za Lecco.</p></div>
+
+    </div>
+
+    <div class="day">
+      <h3>Dzień 2 · czwartek 01.10 — Mediolan od rana do wieczora</h3>
+      <p class="dmeta">Wymeldowanie w Como → cały dzień w Mediolanie → wieczorem pociąg do Bergamo</p>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:00</span><span class="st-t">Wymeldowanie w Como</span></div>
+      <p>Bagaże bierzecie ze sobą — dziś nie wracacie już nad jezioro.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:40</span><span class="st-t">Pociąg Como San Giovanni → Milano Centrale</span></div>
+      <p>40 minut, od <strong>5,20 €</strong> / os., kursy mniej więcej co godzinę. <a href="https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-como-s-giovanni-route/" target="_blank" rel="noopener">Trenord</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">09:30</span><span class="st-t">Bagaże do przechowalni na Milano Centrale</span></div>
+      <p>KiPoint na dworcu — ok. 6 € za sztukę za 5 godzin, przy całym dniu wychodzi ok. 8 €. Wieczorem i tak wracacie na ten sam dworzec po pociąg do Bergamo, więc bagaże są po drodze.<br><small>Jeśli lecicie tylko z bagażem podręcznym, możecie go nosić przez dzień i ominąć ten koszt.</small></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:00</span><span class="st-t">Duomo — katedra i tarasy</span></div>
+      <p>Jedyny punkt, który trzeba kupić z wyprzedzeniem. <strong>Duomo Pass windą 32 €</strong> (schodami 26 €, sama katedra 11 €). Na tarasach chodzi się między iglicami.
+      <a class="pin" href="https://ticket.duomomilano.it/" target="_blank" rel="noopener">bilety</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">12:00</span><span class="st-t">Galleria Vittorio Emanuele II i La Scala</span></div>
+      <p>Szklana galeria z 1877 roku, a tuż za nią Piazza della Scala. Galleria bezpłatnie, muzeum teatru ok. 12 €, jeśli akurat nie ma prób.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">13:00</span><span class="st-t">Obiad poza ścisłym centrum</span></div>
+      <p>Brera albo Porta Venezia — sto metrów od Duomo ceny są turystyczne. Budżet 20–28 € / os.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">14:30</span><span class="st-t">Castello Sforzesco i Parco Sempione</span></div>
+      <p>Dziedzińce i park <strong>bezpłatnie</strong>, muzea 5 € — jest tam <em>Pietà Rondanini</em>, ostatnia, nieukończona rzeźba Michała Anioła.
+      <a class="pin" href="https://www.milanocastello.it/" target="_blank" rel="noopener">milanocastello.it</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">16:30</span><span class="st-t">Brera albo Navigli — do wyboru</span></div>
+      <p><strong>Brera</strong>: wąskie uliczki i Pinacoteca (15 €, Caravaggio i Hayez). <strong>Navigli</strong>: kanały Leonarda, ładniejsze późnym popołudniem.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">18:45</span><span class="st-t">Powrót na Centrale po bagaże</span></div>
+      <p>Metrem M2 albo M3, kilkanaście minut. Dobowy bilet ATM kosztuje 7,60 € i opłaca się już przy czterech przejazdach.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">19:10</span><span class="st-t">Pociąg Milano Centrale → Bergamo</span></div>
+      <p>50 minut, ok. <strong>5,50 €</strong> / os., kursy co pół godziny. <a href="https://www.trenord.it/en/" target="_blank" rel="noopener">Trenord</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">20:15</span><span class="st-t">Bergamo — zameldowanie i kolacja</span></div>
+      <p>Obiekty są 5–10 minut od dworca. Na kolację warto wjechać funikularem na Città Alta: Piazza Vecchia wieczorem jest pusta i podświetlona, a o <strong>22:00 Campanone bije 100 razy</strong>, dawnym sygnałem zamknięcia bram miasta.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.7036,9.6627" target="_blank" rel="noopener">Piazza Vecchia</a></p></div>
+
+    </div>
+
+    <div class="day">
+      <h3>Dzień 3 · piątek 02.10 — powrót bez pośpiechu</h3>
+      <p class="dmeta">15 minut z centrum na lotnisko · wylot 08:40</p>
+
+      <div class="stop"><div class="st-h"><span class="hr">06:15</span><span class="st-t">Autobus na lotnisko</span></div>
+      <p>Linia 1 <a href="https://www.atb.bergamo.it/" target="_blank" rel="noopener">ATB</a> z dworca Bergamo na BGY — <strong>15 minut</strong>, ok. 2,80 € / os., kursy co 20 minut. Dla porównania: z Como trzeba by ruszyć ok. 04:45, z Mediolanu ok. 05:15.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">06:45</span><span class="st-t">Na lotnisku</span></div>
+      <p>Zgodnie z zaleceniem, 1 godz. 55 min przed odlotem. To jedyna rzecz, którą ten wariant załatwia lepiej niż wszystkie oparte na jednej bazie w Como albo Mediolanie.</p></div>
+
+    </div>
+
+    <div class="card">
+      <h3>Koszt wariantu H — na osobę, bez lotu, hotelu i jedzenia</h3>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Pozycja</th><th class="num">EUR</th><th class="num">PLN</th></tr></thead>
+        <tbody>
+          <tr><td>Autobus ATB BGY → dworzec Bergamo</td><td class="num">2,80</td><td class="num">12</td></tr>
+          <tr><td>Pociąg Bergamo → Lecco</td><td class="num">5,00</td><td class="num">22</td></tr>
+          <tr><td>Pociąg Lecco → Como</td><td class="num">5,00</td><td class="num">22</td></tr>
+          <tr><td>Funikular Como–Brunate</td><td class="num">7,20</td><td class="num">31</td></tr>
+          <tr><td>Pociąg Como → Milano Centrale</td><td class="num">5,20</td><td class="num">23</td></tr>
+          <tr><td>Przechowalnia bagażu na Centrale (cały dzień)</td><td class="num">8,00</td><td class="num">35</td></tr>
+          <tr><td>Duomo Pass windą</td><td class="num">32,00</td><td class="num">140</td></tr>
+          <tr><td>Castello Sforzesco — muzea</td><td class="num">5,00</td><td class="num">22</td></tr>
+          <tr><td>Dobowy ATM w Mediolanie</td><td class="num">7,60</td><td class="num">33</td></tr>
+          <tr><td>Pociąg Milano Centrale → Bergamo</td><td class="num">5,50</td><td class="num">24</td></tr>
+          <tr><td>Bilety miejskie ATB w Bergamo (funikular, wieczór)</td><td class="num">3,00</td><td class="num">13</td></tr>
+          <tr><td>Autobus ATB Bergamo → BGY</td><td class="num">2,80</td><td class="num">12</td></tr>
+          <tr class="total"><td>Razem / osoba</td><td class="num">89,10</td><td class="num">389 zł</td></tr>
+          <tr class="total"><td>Razem za 2 osoby</td><td class="num">178,20</td><td class="num">778 zł</td></tr>
+        </tbody>
+      </table></div>
+      <small>Lecco kosztuje praktycznie tyle samo co bezpośredni autobus do Como — różnica to 0,81 € / os. Płacicie za nie czasem, nie pieniędzmi: do Como docieracie ok. 15:00 zamiast 10:30. <strong>Ceny obu pociągów Trenord to szacunki</strong> — taryfa jest liczona od kilometrów, a rozkładu na wrzesień 2026 nie dało się jeszcze potwierdzić. Same linie, Lecco–Bergamo i Como–Lecco, kursują na stałe. Reszta pozycji jak w wariancie G.</small>
     </div>
   </div>
 
@@ -999,6 +1414,14 @@ footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
   <div class="card" style="margin-top:22px">
     <h3>Który wybrać? Krótko o każdym</h3>
     <div class="grid g3">
+      <div style="border:2px solid var(--accent2); border-radius:12px; padding:12px; background:var(--warn-bg)">
+        <h4 style="color:var(--accent2); margin-top:0">★ Wariant G — polecany</h4>
+        <p style="font-size:14.5px">Jezioro, metropolia i miasto na wzgórzu, bez zawracania i bez porannej paniki w piątek. <strong>Domyślny wybór, jeśli nie macie mocnego zdania.</strong></p>
+      </div>
+      <div style="border:2px solid var(--accent2); border-radius:12px; padding:12px; background:var(--warn-bg)">
+        <h4 style="color:var(--accent2); margin-top:0">★ Wariant H — polecany</h4>
+        <p style="font-size:14.5px">G plus Lecco i widok na Resegone, kosztem spokojnego popołudnia w Como. <strong>Bierzcie, jeśli wolicie zobaczyć więcej niż odpocząć.</strong></p>
+      </div>
       <div>
         <h4 style="color:var(--accent2)">Wariant A</h4>
         <p style="font-size:14.5px">Najtańszy i najspokojniejszy. Wykorzystuje prawie wszystkie punkty z Waszej mapy. <strong>Bierzcie, jeśli jezioro jest celem samym w sobie.</strong></p>
@@ -1032,7 +1455,7 @@ footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
 <section id="hotele">
 <div class="wrap">
   <h2>Hotele — 2 noce, 2 osoby, budżet do 1000 zł</h2>
-  <p style="max-width:70ch">Ta sekcja dotyczy <strong>wariantów B i C</strong>, w których bazą jest Mediolan. Pozostałe warianty mają własne tabele noclegowe, z realnymi cenami na Wasz termin i linkami prosto do ofert: <a href="#nocleg-a">Como (wariant A)</a> · <a href="#nocleg-bg">Bergamo (warianty D i E)</a>. Wariant F łączy jedno z drugim — po nocy w każdym z tych miast.</p>
+  <p style="max-width:70ch">Ta sekcja dotyczy <strong>wariantów B i C</strong>, w których bazą jest Mediolan. Pozostałe warianty mają własne tabele noclegowe, z realnymi cenami na Wasz termin i linkami prosto do ofert: <a href="#nocleg-a">Como (wariant A)</a> · <a href="#nocleg-bg">Bergamo (warianty D i E)</a> · <a href="#nocleg-gh">pojedyncze noce w Como i Bergamo (polecane warianty G i H)</a>. Wariant F też dzieli pobyt na dwa miasta.</p>
 
   <div class="grid g2">
     <div class="card">
@@ -1430,6 +1853,8 @@ footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
         <tr><td><strong>D — Bergamo + Mediolan</strong></td><td class="num">66 € · 289 zł</td><td class="num">132 € · 578 zł</td><td>Najtańszy nocleg, spokojny powrót</td></tr>
         <tr><td><strong>E — Bergamo + Como</strong></td><td class="num">66 € · 289 zł</td><td class="num">132 € · 578 zł</td><td>Najwięcej godzin w pociągu</td></tr>
         <tr><td><strong>F — Como, potem Bergamo</strong></td><td class="num">38 € · 164 zł</td><td class="num">75 € · 329 zł</td><td>Najtańszy · ostatnia noc przy lotnisku</td></tr>
+        <tr><td><strong>★ G — Como → Mediolan → Bergamo</strong></td><td class="num">88 € · 385 zł</td><td class="num">177 € · 770 zł</td><td><strong>Polecany</strong> · trzy miasta, bez zawracania</td></tr>
+        <tr><td><strong>★ H — G plus Lecco po drodze</strong></td><td class="num">89 € · 389 zł</td><td class="num">178 € · 778 zł</td><td><strong>Polecany</strong> · czwarte miasto w tej samej cenie</td></tr>
       </tbody>
     </table></div>
     <p style="margin:12px 0 0"><small>Doliczcie: hotel 1000–1400 zł za 2 noce, loty wg rezerwacji Ryanair, taksa turystyczna ok. 40 zł, jedzenie 40–55 € / os. dziennie (ok. 900–1200 zł za dwoje) oraz loty wg rezerwacji Ryanair — ok. 700–900 zł za dwoje w dwie strony z bagażem podręcznym. <strong>Pełny koszt wyjazdu dla dwojga wychodzi mniej więcej 3400–4400 zł</strong>, zależnie od wariantu, hotelu i ceny lotów.</small></p>
