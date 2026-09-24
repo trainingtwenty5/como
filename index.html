@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Como · Mediolan · Werona — 30.09–02.10.2026</title>
-<meta name="description" content="Plan wycieczki Ania &amp; Daniel: 9 wariantów (Como, Mediolan, Werona, Bergamo, Lecco), ceny, bilety i rezerwacje z aktywnymi linkami.">
+<title>Bergamo · Mediolan · Varenna — 30.09–02.10.2026</title>
+<meta name="description" content="Plan wycieczki Ania &amp; Daniel: 2 noce w Bergamo, dzień w Mediolanie, dzień w Varennie i Lecco — ceny, bilety i rezerwacje z aktywnymi linkami.">
 <style>
 :root{
   --bg:#f6f4ef; --bg2:#fffdf8; --card:#ffffff; --ink:#15221f; --ink2:#4d5f5a;
@@ -128,6 +128,21 @@ section:last-of-type{border-bottom:0}
 .day.hl{border-left-color:var(--accent3)}
 .day.hl::before{background:var(--accent3)}
 .day.hl > h3{color:var(--accent3)}
+details.alt{
+  background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+  padding:6px 18px; box-shadow:var(--shadow);
+}
+details.alt > summary{
+  cursor:pointer; font-weight:700; font-size:16px; padding:12px 0;
+  list-style:none; display:flex; align-items:center; gap:10px;
+}
+details.alt > summary::-webkit-details-marker{display:none}
+details.alt > summary::before{
+  content:"▸"; color:var(--accent2); font-size:14px; transition:.15s;
+}
+details.alt[open] > summary::before{transform:rotate(90deg)}
+details.alt > summary small{font-weight:600; color:var(--ink2); font-size:13.5px}
+details.alt .inner{padding:4px 0 18px}
 .tab .t-tag{
   display:inline-block; font-size:10px; font-weight:800; letter-spacing:.1em;
   background:var(--accent2); color:#fff; padding:2px 8px; border-radius:999px; margin-bottom:5px;
@@ -219,12 +234,12 @@ footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
 
 <header class="hero">
   <div class="wrap">
-    <h1>Como · Mediolan · Werona</h1>
-    <p class="sub">Ania &amp; Daniel — 30 września – 2 października 2026 · 2 noce · 9 wariantów do wyboru</p>
+    <h1>Bergamo · Mediolan · Varenna</h1>
+    <p class="sub">Ania &amp; Daniel — 30 września – 2 października 2026 · 2 noce · Bergamo, Mediolan i Varenna</p>
     <div class="badges">
       <span class="badge">WRO ⇄ BGY · Ryanair</span>
       <span class="badge">2 osoby · 1 pokój</span>
-      <span class="badge">Baza: Como, Mediolan lub Bergamo</span>
+      <span class="badge">Baza: Bergamo, 2 noce</span>
       <span class="badge">Transport publiczny</span>
       <span class="badge">Kurs: 1 € = 4,3632 zł</span>
     </div>
@@ -234,7 +249,8 @@ footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
 <nav class="top">
   <div class="wrap">
     <a href="#loty">Loty</a>
-    <a href="#warianty">9 wariantów</a>
+    <a href="#plan">Plan</a>
+    <a href="#warianty">Inne warianty</a>
     <a href="#hotele">Hotele</a>
     <a href="#auta">Auta</a>
     <a href="#transport">Transport</a>
@@ -272,12 +288,14 @@ footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
     </div>
   </div>
 
-  <div class="note warn">
-    <strong>⚠ Poranek powrotu jest napięty — zaplanujcie go teraz</strong>
-    Pierwsze autobusy Milano Centrale → BGY ruszają ok. 04:00–04:30 i jadą 50–60 min.
-    Kupcie bilet na kurs ok. <strong>05:00–05:15</strong> z góry.
-    Alternatywa: ostatnią noc spać w Bergamo (5 min od lotniska) — wtedy śpicie o 2 godziny dłużej.
-    <br>Przy <strong>wariancie A</strong>, gdzie nocujecie w Como, wyjazd wypada jeszcze wcześniej — ok. <strong>04:45</strong>. Sprawdźcie najwcześniejszy piątkowy kurs flibco Como → BGY, zanim zarezerwujecie hotel.
+  <div class="note ok">
+    <strong>Poranek powrotu macie załatwiony</strong>
+    Śpicie w Bergamo, a lotnisko jest stamtąd <strong>15 minut autobusem</strong> linii 1 ATB.
+    Wychodzicie z apartamentu o <strong>06:15</strong> i jesteście na BGY o 06:45, zgodnie z zaleceniem.
+    Bilet 72-godzinny kupiony w środę wciąż wtedy działa — nic nie trzeba dokupywać.
+    <br>Dla porównania, gdybyście nocowali gdzie indziej: z Mediolanu trzeba ruszyć ok. <strong>05:15</strong>
+    (pierwsze autobusy Milano Centrale → BGY ok. 04:00–04:30), a z Como nawet ok. <strong>04:45</strong>.
+    To jeden z głównych powodów, dla których baza wypadła na Bergamo.
   </div>
 
   <div class="btns">
@@ -290,10 +308,240 @@ footer{padding:28px 0 40px; color:var(--ink2); font-size:13.5px}
 </div>
 </section>
 
+<!-- ============ PLAN ============ -->
+<section id="plan">
+<div class="wrap">
+  <h2>Plan wyjazdu</h2>
+    <div class="pick2">
+      <span class="pick-lab">WASZ PLAN</span>
+      <h3>Dwie noce w Bergamo, dzień w Mediolanie, dzień nad jeziorem</h3>
+      <div class="route">
+        <span>🛬 BGY 08:25</span><i>→</i><span>bagaż do depozytu</span><i>→</i><span>Mediolan · cały dzień</span><i>→</i><span>Bergamo · nocleg</span><i>→</i><span>Varenna</span><i>→</i><span>Lecco po drodze</span><i>→</i><span>Bergamo · nocleg</span><i>→</i><span>🛫 08:40</span>
+      </div>
+      <p>Jedna baza na oba noclegi, w apartamencie, który już macie zarezerwowany. Środa idzie w całości na Mediolan, bo i tak czekacie na zameldowanie o 14:00 — bagaż zostaje w depozycie w Bergamo, a Wy jedziecie z pustymi rękami. Czwartek to jezioro: Varenna od rana, a <strong>Lecco leży dokładnie w drodze powrotnej</strong>, więc postój tam nie kosztuje ani jednego dodatkowego przejazdu.</p>
+      <p style="margin-bottom:0"><strong>Koszt:</strong> 104 € / os. (454 zł) za bilety, wstępy i depozyt — plus apartament wg Waszej rezerwacji. Piątkowa pobudka o 06:15, bo na lotnisko jest 15 minut autobusem.</p>
+    </div>
+
+    <div class="card" id="baza">
+      <h3 style="margin-top:0">Baza — Nove Bergamo, Via XX Settembre</h3>
+      <p>Apartament w zabytkowej kamienicy przy głównym deptaku dolnego miasta. 10 minut pieszo od dworca kolejowego, 5 minut od przystanku autobusu lotniskowego. Samodzielne zameldowanie skrytką. <a href="https://www.airbnb.pl/rooms/694082440386185847" target="_blank" rel="noopener">Nove Bergamo na Airbnb →</a></p>
+
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Co</th><th>Szczegóły</th></tr></thead>
+        <tbody>
+          <tr><td>Zameldowanie</td><td><strong>po 14:00</strong> — stąd depozyt bagażu w dniu 1</td></tr>
+          <tr><td>Wymeldowanie</td><td>przed 10:00, a Wy wychodzicie o 06:15</td></tr>
+          <tr><td>Odległość</td><td>10 min do dworca, 5 min do przystanku na BGY</td></tr>
+          <tr><td>Parking</td><td>„Il Triangolo" 200 m, kryty, <strong>20 € / dobę</strong></td></tr>
+          <tr><td>Udogodnienia</td><td>kuchnia, pralka bezpłatnie, taras, szybkie Wi-Fi</td></tr>
+          <tr><td>Ocena</td><td>4,83 / 5 z 236 recenzji, Superhost</td></tr>
+        </tbody>
+      </table></div>
+      <p style="margin:0"><small>Oba wieczory wracacie tutaj. To dziesięć minut od dworca, więc po powrocie z Mediolanu i znad jeziora nie ma już żadnego przesiadania się — wychodzicie z pociągu i jesteście w domu.</small></p>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Depozyt bagażu w środę — gdzie, kiedy i za ile</h3>
+      <p>Lądujecie 08:25, klucze dostajecie po 14:00, a między tym jedziecie na cały dzień do Mediolanu. Bagaż zostaje w Bergamo — w Mediolanie byłby tylko kulą u nogi. Sieć <a href="https://www.radicalstorage.com/luggage-storage/bergamo/" target="_blank" rel="noopener">Radical Storage</a>, ceny i godziny sprawdzone 24.09.2026.</p>
+
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Punkt</th><th>Godziny</th><th class="num">Cena</th><th>Czy pasuje do planu</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Bergamo Bus Terminal</strong></td><td>08:30–13:00, 14:00–19:30</td><td class="num">3,90 € / szt.</td><td><strong>TAK</strong> — zdążycie zostawić o 09:15 i odebrać o 19:10</td></tr>
+          <tr><td>Bergamo Bus Station</td><td>07:00–18:00</td><td class="num">3,90 € / szt.</td><td>nie — zamykają, zanim wrócicie z Mediolanu</td></tr>
+          <tr><td>Bergamo Train Station</td><td>10:00–20:00</td><td class="num">3,90 € / szt.</td><td>nie — otwierają po Waszym pociągu; awaryjnie na odbiór</td></tr>
+          <tr><td>Piazza Vecchia, Città Alta</td><td>10:00–19:00</td><td class="num">3,90 € / szt.</td><td>nie — otwierają za późno</td></tr>
+        </tbody>
+      </table></div>
+      <div class="note ok">
+        <strong>Konkretnie: Bergamo Bus Terminal, ok. 09:15</strong>
+To jedyny punkt w Bergamo otwarty <u>i</u> rano przed Waszym pociągiem, <u>i</u> wieczorem po powrocie. Dwie sztuki bagażu to <strong>7,80 € za dzień</strong> (ok. 34 zł). Przerwa 13:00–14:00 Wam nie przeszkadza — jesteście wtedy w Mediolanie. Zarezerwujcie miejsce przez stronę dzień wcześniej.
+      </div>
+      <p style="margin:0"><small><strong>Plan B:</strong> zabrać bagaż ze sobą i zostawić w KiPoint na Milano Centrale (ok. 6 € za sztukę za 5 godzin, przy całym dniu ok. 8 €). Wieczorem i tak wracacie na ten dworzec po pociąg do Bergamo, więc jest po drodze — płacicie za to noszeniem walizek w autobusie z lotniska i w pociągu. <strong>Plan C:</strong> napiszcie do gospodyni, czy da się podrzucić bagaż przed 14:00 — przy skrytce zwykle nie, ale pytanie nic nie kosztuje.</small></p>
+    </div>
+
+    <div class="day">
+      <h3>Dzień 1 · środa 30.09 — cały dzień w Mediolanie</h3>
+      <p class="dmeta">Lądowanie → bagaż do depozytu → pociąg → Duomo, Galleria, Castello → wieczór w Bergamo</p>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:25</span><span class="st-t">Lądowanie BGY, autobus do miasta</span></div>
+      <p>Linia 1 <a href="https://www.atb.bergamo.it/" target="_blank" rel="noopener">ATB</a> spod terminalu na dworzec Bergamo — <strong>ok. 15 minut</strong>, kursy co 20 min. Kupcie od razu bilet turystyczny <strong>72 h Intera Rete za 14,50 €</strong>: obejmuje ten przejazd, funikulary i powrót na lotnisko w piątek.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">09:15</span><span class="st-t">Bagaż do depozytu</span></div>
+      <p>Bergamo Bus Terminal, tuż przy dworcu kolejowym, 3,90 € za sztukę. Odbierzecie go wieczorem w drodze do apartamentu.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">09:45</span><span class="st-t">Pociąg Bergamo → Milano Centrale</span></div>
+      <p>50 minut, ok. <strong>5,50 €</strong> / os., kursy co pół godziny. <a href="https://www.trenord.it/en/" target="_blank" rel="noopener">Trenord</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:45</span><span class="st-t">Duomo — katedra i tarasy</span></div>
+      <p>Jedyny punkt, który trzeba kupić z wyprzedzeniem. <strong>Duomo Pass windą 32 €</strong> (schodami 26 €, sama katedra 11 €). Na tarasach chodzi się między iglicami.
+      <a class="pin" href="https://ticket.duomomilano.it/" target="_blank" rel="noopener">bilety</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">12:30</span><span class="st-t">Galleria Vittorio Emanuele II i La Scala</span></div>
+      <p>Szklana galeria z 1877 roku, za nią Piazza della Scala. Galleria bezpłatnie, muzeum teatru ok. 12 €, jeśli nie ma prób.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">13:30</span><span class="st-t">Obiad poza ścisłym centrum</span></div>
+      <p>Brera albo Porta Venezia — sto metrów od Duomo ceny są turystyczne. Budżet 20–28 € / os.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">15:00</span><span class="st-t">Castello Sforzesco i Parco Sempione</span></div>
+      <p>Dziedzińce i park <strong>bezpłatnie</strong>, muzea 5 € — jest tam <em>Pietà Rondanini</em>, ostatnia rzeźba Michała Anioła.
+      <a class="pin" href="https://www.milanocastello.it/" target="_blank" rel="noopener">milanocastello.it</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">17:00</span><span class="st-t">Brera albo Navigli — do wyboru</span></div>
+      <p><strong>Brera</strong>: uliczki i Pinacoteca (15 €, Caravaggio i Hayez). <strong>Navigli</strong>: kanały Leonarda, najładniejsze późnym popołudniem. Dobowy bilet ATM kosztuje 7,60 € i opłaca się od czterech przejazdów.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">18:20</span><span class="st-t">Pociąg powrotny do Bergamo</span></div>
+      <p>50 minut. Wyjeżdżacie przed szczytem, żeby zdążyć po bagaż przed 19:30.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">19:10</span><span class="st-t">Odbiór bagażu i zameldowanie</span></div>
+      <p>Depozyt jest przy dworcu, apartament 10 minut dalej. Skrytka, więc wchodzicie bez umawiania się z kimkolwiek.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">20:00</span><span class="st-t">Kolacja</span></div>
+      <p>Dwie opcje pod ręką: <strong>Via XX Settembre</strong> dosłownie pod oknem, albo funikular na <strong>Città Alta</strong> i kolacja na Piazza Vecchia — wieczorem plac jest pusty i podświetlony, a o 22:00 Campanone bije 100 razy.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.7036,9.6627" target="_blank" rel="noopener">Piazza Vecchia</a></p></div>
+
+    </div>
+
+    <div class="day hl">
+      <h3>Dzień 2 · czwartek 01.10 — Varenna, a w drodze powrotnej Lecco</h3>
+      <p class="dmeta">Pociąg wzdłuż jeziora → Varenna i Villa Monastero → postój w Lecco → wieczór w Bergamo</p>
+
+      <div class="stop"><div class="st-h"><span class="hr">08:10</span><span class="st-t">Pociąg Bergamo → Lecco</span></div>
+      <p>Linia Lecco–Bergamo, <strong>ok. 40 minut</strong>, ok. 5 € / os. Bagażu nie bierzecie — apartament zostaje Wasz do piątku. <a href="https://www.trenord.it/en/" target="_blank" rel="noopener">Trenord</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">09:00</span><span class="st-t">Przesiadka w Lecco na pociąg do Varenny</span></div>
+      <p>Linia na Tirano wzdłuż wschodniego brzegu, <strong>ok. 20 minut</strong>, ok. 3 € / os. Ostatni odcinek jedzie tuż przy wodzie.<br><small>Rozkład sprawdźcie dzień wcześniej w aplikacji Trenord — na obu odcinkach kursy bywają co godzinę.</small></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">09:25</span><span class="st-t">Varenna — Passeggiata degli Innamorati</span></div>
+      <p>Od stacji Varenna-Esino 10 minut w dół do wody. „Ścieżka zakochanych" jest zawieszona nad jeziorem, a Riva Grande to te kolorowe kamienice z pocztówek. Rano jest tu pusto — najlepszy moment na zdjęcia. Bezpłatnie.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=46.011868,9.2829034" target="_blank" rel="noopener">Passeggiata</a>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=46.0111464,9.2828646" target="_blank" rel="noopener">Riva Grande</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">10:30</span><span class="st-t">Villa Monastero</span></div>
+      <p>Willa z ogrodem botanicznym ciągnącym się dwa kilometry wzdłuż brzegu. <strong>15 € dom i ogród, 13 € sam ogród.</strong> W październiku czynne 10:00–18:00; zamknięte we wtorki, więc czwartek jest wolny.
+      <a class="pin" href="https://www.villamonastero.eu/tariffe-orari/" target="_blank" rel="noopener">cennik i godziny</a>
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=46.0079,9.2856" target="_blank" rel="noopener">mapa</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">12:30</span><span class="st-t">Obiad w Varennie</span></div>
+      <p>Uliczki powyżej nabrzeża są tańsze niż tarasy przy wodzie. Lokalne: <em>missoltini</em>, suszone rybki z jeziora, i risotto z okoniem. Budżet 20–28 € / os.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">13:45</span><span class="st-t">Castello di Vezio albo prom do Bellagio — do wyboru</span></div>
+      <p><strong>Vezio</strong>: 20 minut pod górę, ruiny warowni z najlepszym widokiem na rozwidlenie jeziora, bilet kilka euro. <strong>Bellagio</strong>: prom 15–20 minut w jedną stronę, 5,50 € — wystarczy na Salita Serbelloni i Punta Spartivento, ale wracacie w pośpiechu.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=46.0134,9.28292" target="_blank" rel="noopener">przystań Varenna</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">15:30</span><span class="st-t">Pociąg Varenna → Lecco</span></div>
+      <p>Ok. 20 minut, ok. 3 € / os. Lecco leży dokładnie po drodze do Bergamo, więc postój nic nie kosztuje poza czasem.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">16:00</span><span class="st-t">Lecco — lungolago pod ścianą Resegone</span></div>
+      <p>Dworzec jest 10 minut od wody. Nad miastem stoi <strong>Resegone</strong> — poszarpana grań, która wygląda jak zęby piły, i od niej wzięła nazwę. Po drugiej stronie Grigne. To tu Manzoni umieścił <em>Narzeczonych</em>.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8566,9.3931" target="_blank" rel="noopener">lungolago</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">16:45</span><span class="st-t">Ponte Azzone Visconti, Piazza XX Settembre, San Nicolò</span></div>
+      <p>Most z XIV wieku, plac z Torre Viscontea i bazylika, której 96-metrową dzwonnicę miejscowi nazywają <em>il Matitone</em> — wielki ołówek. Wszystko bezpłatnie, spokojnym krokiem półtorej godziny.
+      <a class="pin" href="https://www.google.com/maps/search/?api=1&amp;query=45.8531,9.3906" target="_blank" rel="noopener">Ponte Visconti</a></p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">18:30</span><span class="st-t">Kolacja w Lecco albo w Bergamo</span></div>
+      <p>Lecco jest wyraźnie tańsze od Varenny i Bellagio — żyje z mieszkańców, nie z turystów. Budżet 15–22 € / os. Jeśli wolicie zjeść u siebie, jedźcie od razu.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">19:30</span><span class="st-t">Pociąg Lecco → Bergamo</span></div>
+      <p>Ok. 40 minut, w Bergamo jesteście ok. 20:15. Dziesięć minut pieszo z dworca i jesteście w apartamencie.</p></div>
+
+    </div>
+
+    <div class="day">
+      <h3>Dzień 3 · piątek 02.10 — powrót bez pośpiechu</h3>
+      <p class="dmeta">15 minut z centrum na lotnisko · wylot 08:40</p>
+
+      <div class="stop"><div class="st-h"><span class="hr">06:15</span><span class="st-t">Wyjście z apartamentu, autobus na BGY</span></div>
+      <p>Klucz do skrytki, 5 minut pieszo na przystanek przy Viale Papa Giovanni XXIII, linia 1 <a href="https://www.atb.bergamo.it/" target="_blank" rel="noopener">ATB</a> — <strong>15 minut</strong>. Bilet 72-godzinny wciąż działa: kupiony w środę ok. 08:45 wygasa dopiero w sobotę rano.</p></div>
+
+      <div class="stop"><div class="st-h"><span class="hr">06:45</span><span class="st-t">Na lotnisku</span></div>
+      <p>1 godz. 55 min przed odlotem, zgodnie z zaleceniem. Dla porównania: z Como trzeba by wyjechać ok. 04:45, z Mediolanu ok. 05:15.</p></div>
+
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Transport i karnety</h3>
+      <p>Jeden bilet ATB obsługuje w Bergamo autobusy, oba funikulary i tramwaj T1. Taryfy z oficjalnego cennika przewoźnika.</p>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Bilet ATB</th><th>Ważność</th><th class="num">Cena</th><th>Co obejmuje</th></tr></thead>
+        <tbody>
+          <tr><td>Jednorazowy, jedna strefa</td><td>75 minut</td><td class="num">1,70 €</td><td>miasto i funikulary, bez lotniska</td></tr>
+          <tr><td>Turystyczny — Zona Urbana</td><td>24 godziny</td><td class="num">4,90 €</td><td>miasto i funikulary, bez lotniska</td></tr>
+          <tr><td>Turystyczny — Intera Rete</td><td>24 godziny</td><td class="num">8,50 €</td><td>z lotniskiem BGY</td></tr>
+          <tr><td><strong>Turystyczny — Intera Rete</strong></td><td><strong>72 godziny</strong></td><td class="num"><strong>14,50 €</strong></td><td><strong>z lotniskiem i bagażem w cenie</strong></td></tr>
+        </tbody>
+      </table></div>
+      <div class="note ok">
+        <strong>Bierzcie 72-godzinny za 14,50 € / os.</strong>
+Kupujecie raz, w środę na lotnisku, i do piątku rano nie myślicie o biletach: transfer z BGY, przejazdy po mieście, funikular na Città Alta i powrót na lotnisko. Pojedynczo wyszłoby ok. 11–13 €, więc dopłacacie 2–3 € za spokój, a w cenie jest transport bagażu.
+      </div>
+      <div class="note warn">
+        <strong>⚠ Papierowych biletów ATB już nie ma</strong>
+Od listopada 2024 bilety są elektroniczne: aplikacja <strong>ATB Mobile</strong>, <strong>WhatsApp (Chat&amp;Go by ATB)</strong>, automat, kiosk albo karta zbliżeniowa na zielonym kasowniku w autobusie. Bilet z aplikacji działa tylko na tym telefonie, którym go kupiliście — <strong>każde z Was kupuje osobno</strong>, zrzut ekranu nie zadziała.
+      </div>
+      <h4 style="margin:18px 0 6px">Pociągi — i czy karnet się opłaca</h4>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Trasa / bilet</th><th>Czas</th><th class="num">Cena / 1 os.</th></tr></thead>
+        <tbody>
+          <tr><td>Bergamo ⇄ Mediolan (dzień 1)</td><td>50 min w jedną stronę</td><td class="num">ok. 11,00 €</td></tr>
+          <tr><td>Bergamo → Lecco → Varenna → Lecco → Bergamo (dzień 2)</td><td>ok. 1 godz. w jedną stronę</td><td class="num">ok. 16,00 €</td></tr>
+          <tr><td><strong>Razem pojedyncze bilety</strong></td><td>—</td><td class="num"><strong>ok. 27,00 €</strong></td></tr>
+          <tr><td>Karnet IVOL — 2 dni</td><td>cała Lombardia, bez limitu</td><td class="num">30,00 €</td></tr>
+          <tr><td>Karnet IVOL — 3 dni</td><td>cała Lombardia, bez limitu</td><td class="num">35,50 €</td></tr>
+        </tbody>
+      </table></div>
+      <p style="margin:10px 0 0"><small>Karnet „Io Viaggio Ovunque in Lombardia" na 2 dni kosztuje <strong>30 €</strong>, a Wasze przejazdy w pojedynczych biletach to <strong>ok. 27 €</strong> — różnica jest na tyle mała, że karnet ma sens głównie dla wygody: jeden bilet na wszystko, bez kasowania przy każdej przesiadce, i bez ryzyka, że coś przegapicie przy zmianie planu. Cały dzień 2 to cztery odcinki z dwiema przesiadkami, więc to realna zaleta. <a href="https://www.trenord.it/en/tickets/travel-titles/daily-tickets/" target="_blank" rel="noopener">Szczegóły IVOL →</a> Ceny pojedynczych biletów to stawki regionalne liczone od kilometrów — dokładne kwoty sprawdźcie w aplikacji Trenord.</small></p>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Wieczory w Bergamo</h3>
+      <p>Oba wieczory wracacie do tej samej bazy, a Città Alta po zmroku jest inna niż w dzień: autokary odjeżdżają ok. 18:00 i stare miasto zostaje dla mieszkańców. Funikular jeździ do późna.</p>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Pomysł</th><th>Kiedy</th><th>Ile</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Piazza Vecchia po zmroku</strong><br><small>podświetlony Palazzo della Ragione, fontanna Contariniego, o 22:00 Campanone bije 100 razy</small></td><td>oba wieczory</td><td>bezpłatnie</td></tr>
+          <tr><td><strong>Funikular San Vigilio</strong><br><small>z Colle Aperto na szczyt wzgórza; ruiny zamku i taras z widokiem na równinę — 30 września słońce zachodzi ok. 19:05</small></td><td>gdy wrócicie przed 19:00</td><td>w bilecie ATB</td></tr>
+          <tr><td><strong>Mury weneckie</strong><br><small>odcinek Porta San Giacomo → Colle Aperto, 25 minut; od 2017 na liście UNESCO, wieczorem podświetlone</small></td><td>po funikularze</td><td>bezpłatnie</td></tr>
+          <tr><td><strong>Kolacja lokalna</strong><br><small><em>casoncelli alla bergamasca</em> — pierogi z mięsem, masłem, szałwią i boczkiem; <em>polenta taragna</em>; do tego Valcalepio</small></td><td>oba wieczory</td><td>20–30 € / os.</td></tr>
+          <tr><td><strong>Stracciatella u źródła</strong><br><small>ten smak lodów wymyślono w barze La Marianna przy Colle Aperto — do dziś tam jest</small></td><td>po kolacji</td><td>3–5 €</td></tr>
+          <tr><td><strong>Aperitivo na Sentierone i Via XX Settembre</strong><br><small>macie to pod oknem — wieczorny deptak, po którym spaceruje całe Bergamo</small></td><td>gdy wrócicie późno</td><td>8–15 € / os.</td></tr>
+        </tbody>
+      </table></div>
+      <p style="margin:0"><small>W środę wracacie ok. 19:10, w czwartek ok. 20:15 — czyli w środę zdążycie jeszcze na San Vigilio i mury przed zachodem słońca, a czwartek zostawcie na spokojną kolację.</small></p>
+    </div>
+
+    <div class="card">
+      <h3>Koszt planu — na osobę, bez lotu, apartamentu i jedzenia</h3>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>Pozycja</th><th class="num">EUR</th><th class="num">PLN</th></tr></thead>
+        <tbody>
+          <tr><td>Bilet ATB 72 h Intera Rete (lotnisko, miasto, funikulary)</td><td class="num">14,50</td><td class="num">63</td></tr>
+          <tr><td>Depozyt bagażu w środę (1 szt.)</td><td class="num">3,90</td><td class="num">17</td></tr>
+          <tr><td>Pociągi Bergamo ⇄ Mediolan (dzień 1)</td><td class="num">11,00</td><td class="num">48</td></tr>
+          <tr><td>Duomo Pass windą</td><td class="num">32,00</td><td class="num">140</td></tr>
+          <tr><td>Castello Sforzesco — muzea</td><td class="num">5,00</td><td class="num">22</td></tr>
+          <tr><td>Dobowy ATM w Mediolanie</td><td class="num">7,60</td><td class="num">33</td></tr>
+          <tr><td>Pociągi Bergamo ⇄ Varenna przez Lecco (dzień 2)</td><td class="num">16,00</td><td class="num">70</td></tr>
+          <tr><td>Villa Monastero — dom i ogród</td><td class="num">15,00</td><td class="num">65</td></tr>
+          <tr class="total"><td>Razem / osoba</td><td class="num">104,00</td><td class="num">454 zł</td></tr>
+          <tr class="total"><td>Razem za 2 osoby</td><td class="num">208,00</td><td class="num">908 zł</td></tr>
+        </tbody>
+      </table></div>
+      <small>Bez Duomo Pass plan spada do 72 € / os., bez Villa Monastero do 89 €. Passeggiata degli Innamorati, lungolago w Lecco, Ponte Azzone Visconti, Galleria, dziedzińce Castello, Piazza Vecchia, bazylika i mury weneckie — bezpłatnie. Ceny pociągów regionalnych to szacunki liczone od kilometrów; ATB, Duomo, Castello i Villa Monastero z oficjalnych cenników. Kwoty w złotych zaokrąglone, sumy przeliczone z euro.
+      <br>Dochodzi apartament wg Waszej rezerwacji oraz ewentualny parking „Il Triangolo" 20 € za dobę, gdybyście jednak brali auto.</small>
+    </div>
+</div>
+</section>
+
 <!-- ============ WARIANTY ============ -->
 <section id="warianty">
 <div class="wrap">
-  <h2>Dziewięć wariantów — wybierzcie jeden</h2>
+  <h2>Inne rozważane warianty</h2>
+  <p style="max-width:70ch">Dziewięć układów, które rozpatrywaliśmy po drodze do planu wyżej — inne bazy noclegowe, inne miasta, inne kompromisy. Zostawione dla porównania i na wypadek, gdyby coś się posypało.</p>
+  <details class="alt">
+    <summary>Pokaż wszystkie dziewięć wariantów <small>— A–I, z kosztami i rozpiską dni</small></summary>
+    <div class="inner">
   <p style="max-width:70ch">Każdy wariant to te same 2 pełne dni zwiedzania (środa + czwartek) i ten sam lot. Różni je to, co zwiedzacie — <strong>i gdzie śpicie</strong>. <strong>Zacznijcie od wariantów G i H</strong>, oznaczonych na pomarańczowo: przechodzą przez trzy miasta bez zawracania i kończą ostatnią noc 15 minut od lotniska. Dalej: baza w Mediolanie (B, C), w Como (A), w Bergamo (D, E) albo podzielona między Como i Bergamo (F). <strong>Wariant I</strong>, oznaczony na zielono, jest napisany pod konkretny apartament w Bergamo i jego zameldowanie o 14:00.</p>
 
   <div class="tabs" role="tablist">
@@ -1711,6 +1959,8 @@ Werona to piękne miasto, ale cztery godziny w pociągu w dniu, w którym i tak 
       </div>
     </div>
   </div>
+    </div>
+  </details>
 </div>
 </section>
 
@@ -2107,9 +2357,11 @@ Werona to piękne miasto, ale cztery godziny w pociągu w dniu, w którym i tak 
 
   <div class="card">
     <h3>Porównanie kosztów — 2 osoby, bez lotów, hotelu i jedzenia</h3>
+    <p style="margin-top:0"><small>Pierwszy wiersz to wybrany plan, reszta to odrzucone warianty — zostawione dla porównania.</small></p>
     <div class="tbl-wrap"><table>
       <thead><tr><th>Wariant</th><th class="num">Na osobę</th><th class="num">Za 2 osoby</th><th>Charakter</th></tr></thead>
       <tbody>
+        <tr class="total"><td><strong>PLAN — Bergamo + Mediolan + Varenna</strong></td><td class="num">104 € · 454 zł</td><td class="num">208 € · 908 zł</td><td>Wybrany układ</td></tr>
         <tr><td><strong>A — 2 dni nad Como</strong></td><td class="num">78 € · 341 zł</td><td class="num">156 € · 682 zł</td><td>Najtańszy i najspokojniejszy · nocleg w Como</td></tr>
         <tr><td><strong>B — Como + Mediolan</strong></td><td class="num">111 € · 485 zł</td><td class="num">222 € · 970 zł</td><td>Najwięcej ikon do odhaczenia</td></tr>
         <tr><td><strong>C — Como + Werona</strong></td><td class="num">103 € · 449 zł</td><td class="num">206 € · 899 zł</td><td>Najmniej tłoku, najładniejsze miasto</td></tr>
